@@ -1,6 +1,6 @@
 /**
-*	@file:	QssTtitleBar.h 
-*	@details:	css¿Ø¼ş¶¨ÖÆÍ·ÎÄ¼ş£¬°üÀ¨ËùÓĞUI¿Ø¼ş¼°×Ô¶¨Òå±êÌâÀ¸µÄÖ÷´°¿Ú£¬¶Ô»°¿ò¼°ÏûÏ¢¿ò
+*	@file:		QssTtitleBar.h 
+*	@details:	cssæ§ä»¶å®šåˆ¶å¤´æ–‡ä»¶ï¼ŒåŒ…æ‹¬æ‰€æœ‰UIæ§ä»¶åŠè‡ªå®šä¹‰æ ‡é¢˜æ çš„ä¸»çª—å£ï¼Œå¯¹è¯æ¡†åŠæ¶ˆæ¯æ¡†
 *	@author: 	chenwen(chenwen1126@tom.com)
 *   @datetime:  2017-7-25
 *   @history:   v1.0 first edition
@@ -25,10 +25,10 @@ class  QssTtitleBar : public QWidget
 public:
 	enum QTitleBar_Button
 	{
-		QTitleBar_Button_Min = 0x00000001,
-		QTitleBar_Button_Max = 0x00000002,
-		QTitleBar_Button_Restore = 0x00000004,
-		QTitleBar_Button_Close = 0x00000008
+		QTitleBar_Button_Min = 		0x00000001,
+		QTitleBar_Button_Max = 		0x00000002,
+		QTitleBar_Button_Restore = 	0x00000004,
+		QTitleBar_Button_Close = 	0x00000008
 	};
 
 	enum QTitleBar_Type
@@ -74,8 +74,8 @@ private:
 
 	QPoint m_pressedPos;
 
-	QRect m_rcValid;//×ÀÃæ×î´ó¿ÉÓÃ³ß´ç
-	QRect m_rcNormal;//»¹Ô­ºó´°¿Ú³ß´ç
+	QRect m_rcValid;//æ¡Œé¢æœ€å¤§å¯ç”¨å°ºå¯¸
+	QRect m_rcNormal;//è¿˜åŸåçª—å£å°ºå¯¸
 
 	QTitleBar_Type m_type;
 };
@@ -111,10 +111,10 @@ private:
 	QFrame* m_frame;
 	QssTtitleBar* m_titleBar;
 
-	QRect m_rcValid;//×ÀÃæ×î´ó¿ÉÓÃ³ß´ç
-	QRect m_rcNormal;//»¹Ô­ºó´°¿Ú³ß´ç
+	QRect m_rcValid;//æ¡Œé¢æœ€å¤§å¯ç”¨å°ºå¯¸
+	QRect m_rcNormal;//è¿˜åŸåçª—å£å°ºå¯¸
 
-	/**  ±ß¿òµ÷Õû´óĞ¡Ïà¹Ø */
+	/**  è¾¹æ¡†è°ƒæ•´å¤§å°ç›¸å…³ */
 	QRect m_rect;
 	QPoint m_pos;
 	bool m_mousePressedInBoundy;
@@ -156,7 +156,7 @@ private:
 	QRect m_rcValid;
 	QWidget* m_parent;
 
-	/**  ±ß¿òµ÷Õû´óĞ¡Ïà¹Ø */
+	/**  è¾¹æ¡†è°ƒæ•´å¤§å°ç›¸å…³ */
 	QRect m_rect;
 	QPoint m_pos;
 	bool m_mousePressedInBorder;
@@ -178,17 +178,17 @@ public:
 	inline QssTtitleBar* titleBar(){return m_titleBar;}
 	inline QFrame* frame(){return m_frame;}
 
-	/** ÅäºÏºêÊ¹ÓÃ£¬¸üÎª¼ò½à */
+	/** é…åˆå®ä½¿ç”¨ï¼Œæ›´ä¸ºç®€æ´ */
 	static QMessageBox::StandardButton tips(const QString & text, QWidget* parent = 0, 
-		const QString & title = QString::fromLocal8Bit("ÌáÊ¾"), StandardButtons btn = QMessageBox::Ok);
+		const QString & title = QString::fromLocal8Bit("æç¤º"), StandardButtons btn = QMessageBox::Ok);
 	static QMessageBox::StandardButton warn(const QString & text, QWidget* parent = 0, 
-		const QString & title = QString::fromLocal8Bit("¾¯¸æ"), StandardButtons btn = QMessageBox::Ok);
+		const QString & title = QString::fromLocal8Bit("è­¦å‘Š"), StandardButtons btn = QMessageBox::Ok);
 	static QMessageBox::StandardButton error(const QString & text, QWidget* parent = 0, 
-		const QString & title = QString::fromLocal8Bit("´íÎó"), StandardButtons btn = QMessageBox::Ok);
+		const QString & title = QString::fromLocal8Bit("é”™è¯¯"), StandardButtons btn = QMessageBox::Ok);
 	static QMessageBox::StandardButton ask(const QString & text, QWidget* parent = 0, 
-		const QString & title = QString::fromLocal8Bit("Ñ¯ÎÊ"), StandardButtons btn = QMessageBox::Yes | QMessageBox::No);
+		const QString & title = QString::fromLocal8Bit("è¯¢é—®"), StandardButtons btn = QMessageBox::Yes | QMessageBox::No);
 
-	/** ¸²¸Ç¶¨Òå£¬ÊÊÅäÔ­ÓĞQMessageBox */
+	/** è¦†ç›–å®šä¹‰ï¼Œé€‚é…åŸæœ‰QMessageBox */
 	static StandardButton information(QWidget *parent, const QString &title,
 		const QString &text, StandardButtons buttons = Ok,
 		StandardButton defaultButton = NoButton);
@@ -203,12 +203,12 @@ public:
 		StandardButton defaultButton = QMessageBox::NoButton);
 
 	static QMessageBox::StandardButton regard(const QString & text, QWidget* parent = 0,
-		const QString & title = QString::fromLocal8Bit("¹ØÓÚ"));
+		const QString & title = QString::fromLocal8Bit("å…³äº"));
 	static QMessageBox::StandardButton regard(const QString & text, QIcon icon, QWidget* parent = 0,
-		const QString & title = QString::fromLocal8Bit("¹ØÓÚ"));
+		const QString & title = QString::fromLocal8Bit("å…³äº"));
 
 	static QMessageBox::StandardButton regardQt(QWidget* parent = 0, 
-		const QString & title = QString::fromLocal8Bit("¹ØÓÚQt"));
+		const QString & title = QString::fromLocal8Bit("å…³äºQt"));
 
 	static void about(QWidget *parent, const QString &title, const QString &text);
 	static void about(QWidget *parent, const QString &title, const QString &text, QIcon icon);
@@ -225,12 +225,12 @@ private:
 	QRect m_rcValid;
 };
 
-#define tipBox(text)   QssMessageBox::tips(text)
-#define warnBox(text)  QssMessageBox::warn(text)
-#define errBox(text)	 QssMessageBox::error(text)
-#define askBox(text)   QssMessageBox::ask(text)
+#define tipBox(text)   	QssMessageBox::tips(text)
+#define warnBox(text)  	QssMessageBox::warn(text)
+#define errBox(text)	QssMessageBox::error(text)
+#define askBox(text)   	QssMessageBox::ask(text)
 
-#define aboutBox(title, text) QssMessageBox::regard(text, 0,title)
-#define aboutQtBox() QssMessageBox::regardQt()
+#define aboutBox(title, text) 	QssMessageBox::regard(text, 0,title)
+#define aboutQtBox() 			QssMessageBox::regardQt()
 
 #endif // QSSTTITLEBAR_H
