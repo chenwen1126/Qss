@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QssDemo">
+        <file>app.png</file>
+    </qresource>
+</RCC>
