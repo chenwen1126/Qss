@@ -14,3 +14,7 @@ qApp->setStyleSheet(css);
  ```
  to you main function.<br>
  step3: your UI class inherit from QssDialog, QssMainWindow provided by Qss.
+ # Screenshot
+ QssDemo Screenshot like this:<br>
+ ![](https://github.com/chenwen1126/Qss/blob/master/ScreenShot/01.png)
+
