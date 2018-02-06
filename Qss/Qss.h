@@ -230,7 +230,7 @@ private:
 #define errBox(text)	QssMessageBox::error(text)
 #define askBox(text)   	QssMessageBox::ask(text)
 
-#define aboutBox(title, text) 	QssMessageBox::regard(text, 0,title)
-#define aboutQtBox() 			QssMessageBox::regardQt()
+#define aboutBox(title, text)	QssMessageBox::regard(text, 0,title)
+#define aboutQtBox()			QssMessageBox::regardQt()
 
 #endif // QSSTTITLEBAR_H
