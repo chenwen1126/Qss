@@ -5,8 +5,8 @@
 *   @datetime:  2017-7-25
 *   @history:   v1.0 first edition
 */
-#ifndef QSSTTITLEBAR_H
-#define QSSTTITLEBAR_H
+#ifndef QSS_H
+#define QSS_H
 
 #include <QWidget>
 #include <QMainWindow>
@@ -233,4 +233,4 @@ private:
 #define aboutBox(title, text)	QssMessageBox::regard(text, 0,title)
 #define aboutQtBox()			QssMessageBox::regardQt()
 
-#endif // QSSTTITLEBAR_H
+#endif // QSS_H
