@@ -1,4 +1,10 @@
-
+/**
+*	@file:		list.h
+*	@details:	qt style sheet css example
+*	@author: 	chenwen(chenwen1126@tom.com)
+*	@datetime:  2018-2-6
+*	@history:   V1.0 first edition
+*/
 /*/////////////////////////////////////////////////QDialog///////////////////////////////////////////*/
 QWidget, QFrame,QDialog
 {
@@ -20,60 +26,60 @@ QStatusBar
 {
 	border-top:1px solid #aaaaaa;
 	min-height:20px;
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #f4f4f4, stop:1 #e4e4e4);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #f4f4f4, stop:1 #e4e4e4);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*/////////////////////////////////////////////////¹¤¾ßÀ¸¼°´°¿Ú±ß¿ò///////////////////////////////////////////*/ 
-/*´°¿Ú±ß¿ò£¬¿É*/
+/*/////////////////////////////////////////////////å·¥å…·æ åŠçª—å£è¾¹æ¡†///////////////////////////////////////////*/ 
+/*çª—å£è¾¹æ¡†ï¼Œå¯*/
 QFrame#window
 {
 	padding:0px;
-	border-width:2px;/*±ß¿ò¿í¶È*/
-	border-style:solid;/*±ß¿òÀàĞÍ*/
-	/*ÓÃ½¥±äÉ«¿ÉÒÔÓªÔì¹âÔÎ±ß¿òĞ§¹û*/
-	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #999999, stop:1 #ffffff)/*ÉÏ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #999999, stop:1 #ffffff)/*ÓÒ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #999999, stop:1 #ffffff)/*ÏÂ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #999999, stop:1 #ffffff);/*×ó±ß¿ò½¥±äÉ«*/
+	border-width:2px;/*è¾¹æ¡†å®½åº¦*/
+	border-style:solid;/*è¾¹æ¡†ç±»å‹*/
+	/*ç”¨æ¸å˜è‰²å¯ä»¥è¥é€ å…‰æ™•è¾¹æ¡†æ•ˆæœ*/
+	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #999999, stop:1 #ffffff)/*ä¸Šè¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #999999, stop:1 #ffffff)/*å³è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #999999, stop:1 #ffffff)/*ä¸‹è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #999999, stop:1 #ffffff);/*å·¦è¾¹æ¡†æ¸å˜è‰²*/
 }
 
 QFrame#dialog,QFrame#messagebox
 {
-	padding:12px;/*ÉèÖÃÍ¸Ã÷ÒõÓ°Áô³öµÄpadding¿Õ¼ä£¬Í¨¹ıÔ´Âë»æÖÆÍ¸Ã÷ÒõÓ° ×¢ÒâÔÚ´úÂëÖĞÉèÖÃQSSDIALOG_SHADOW_WIDTHÎª12*/
-	border:0px solid #ff0000;/*Ö¸¶¨±ß¿òÎª0£¬Êµ¼Ê±ß¿òÊ±»æÖÆÒõÓ°Ê±Ö±½Ó»­deÖ±Ïß£¬±ß¿òÑÕÉ«Ò²ÊÇÔÚ´úÂëÖĞÖ¸¶¨µÄ*/
+	padding:12px;/*è®¾ç½®é€æ˜é˜´å½±ç•™å‡ºçš„paddingç©ºé—´ï¼Œé€šè¿‡æºç ç»˜åˆ¶é€æ˜é˜´å½± æ³¨æ„åœ¨ä»£ç ä¸­è®¾ç½®QSSDIALOG_SHADOW_WIDTHä¸º12*/
+	border:0px solid #ff0000;/*æŒ‡å®šè¾¹æ¡†ä¸º0ï¼Œå®é™…è¾¹æ¡†æ—¶ç»˜åˆ¶é˜´å½±æ—¶ç›´æ¥ç”»deç›´çº¿ï¼Œè¾¹æ¡†é¢œè‰²ä¹Ÿæ˜¯åœ¨ä»£ç ä¸­æŒ‡å®šçš„*/
 }
 
-/*±êÌâÀ¸*/
+/*æ ‡é¢˜æ */
 QWidget#titlebar
 {
-	min-height:25px;/*ÓÃmin-heightÉèÖÃ±êÌâÀ¸¸ß¶È*/
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #e4e4e4, stop:1 #d4d4d4);/*½¥±ä±³¾°É«*/
+	min-height:25px;/*ç”¨min-heightè®¾ç½®æ ‡é¢˜æ é«˜åº¦*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #e4e4e4, stop:1 #d4d4d4);/*æ¸å˜èƒŒæ™¯è‰²*/
 	border-bottom:1px solid #aaaaaa;
 }
 
 QWidget:active#titlebar
 {
-	min-height:25px;/*ÓÃmin-heightÉèÖÃ±êÌâÀ¸¸ß¶È*/
+	min-height:25px;/*ç”¨min-heightè®¾ç½®æ ‡é¢˜æ é«˜åº¦*/
 	
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #f4f4f4, stop:1 #e4e4e4);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #f4f4f4, stop:1 #e4e4e4);/*æ¸å˜èƒŒæ™¯è‰²*/
 	border-bottom:1px solid #aaaaaa;
 }
 
-/*±êÌâÀ¸Í¼±ê*/
+/*æ ‡é¢˜æ å›¾æ ‡*/
 QPushButton#titlebaricon
 {
-	min-width:24px;/*¸²¸ÇQPushButtonÖĞÉèÖÃ*/
-	min-height:24px;/*¸²¸ÇQPushButtonÖĞÉèÖÃ*/
-	width:24px;/*¿í¶È*/
+	min-width:24px;/*è¦†ç›–QPushButtonä¸­è®¾ç½®*/
+	min-height:24px;/*è¦†ç›–QPushButtonä¸­è®¾ç½®*/
+	width:24px;/*å®½åº¦*/
 	height:24px;
 	padding:0px;
 	padding-left:2px;
 	padding-right:-2px;
-	background:transparent;/*ÎŞ±³¾°ÎŞ±ß¿ò*/
+	background:transparent;/*æ— èƒŒæ™¯æ— è¾¹æ¡†*/
 	border:none;
 }
 
-/*±êÌâÀ¸±êÌâ*/
+/*æ ‡é¢˜æ æ ‡é¢˜*/
 QLabel#titlebartitle
 {
 	padding-left:2px;
@@ -83,7 +89,7 @@ QLabel#titlebartitle
 	background:transparent;
 }
 
-/*±êÌâÀ¸¹Ø±Õ°´Å¥*/
+/*æ ‡é¢˜æ å…³é—­æŒ‰é’®*/
 QPushButton#titlebarclosebtn
 {
 	padding:0px;
@@ -94,7 +100,7 @@ QPushButton#titlebarclosebtn
 	height:19px;
 	outline:none;
 	border: none;
-	background:transparent;/*ÎŞ±³¾°ÎŞ±ß¿ò*/
+	background:transparent;/*æ— èƒŒæ™¯æ— è¾¹æ¡†*/
 	image:url(:/qss/icon/btn_close_highlight.png);/*btn_close_normal*/
 }
 
@@ -116,7 +122,7 @@ QPushButton#titlebarclosebtn:pressed
 	image:url(:/qss/icon/btn_close_down.png);
 }
 
-/*±êÌâÀ¸×îĞ¡»¯°´Å¥*/
+/*æ ‡é¢˜æ æœ€å°åŒ–æŒ‰é’®*/
 QPushButton#titlebarminbtn
 {
 	padding:0px;
@@ -148,11 +154,11 @@ QPushButton#titlebarminbtn:pressed
 	image:url(:/qss/icon/btn_mini_down.png);
 }
 
-/*±êÌâÀ¸×î´ó»¯°´Å¥*/
+/*æ ‡é¢˜æ æœ€å¤§åŒ–æŒ‰é’®*/
 QPushButton#titlebarmaxbtn
 {
 	padding:0px;
-	padding-bottom:3px;/*ÒòÎªÍ¼±í×ÊÔ´³ß´ç²»¶Ô£¬×öµÄÎ¢µ÷*/
+	padding-bottom:3px;/*å› ä¸ºå›¾è¡¨èµ„æºå°ºå¯¸ä¸å¯¹ï¼Œåšçš„å¾®è°ƒ*/
 	border: none;	
 	min-width:25px;
 	min-height:18px;
@@ -181,11 +187,11 @@ QPushButton#titlebarmaxbtn:pressed
 	image:url(:/qss/icon/btn_max_down.png);
 }
 
-/*±êÌâÀ¸»¹Ô­°´Å¥*/
+/*æ ‡é¢˜æ è¿˜åŸæŒ‰é’®*/
 QPushButton#titlebarrestorebtn
 {
 	padding:0px;
-	padding-bottom:3px;/*ÒòÎªÍ¼±í×ÊÔ´³ß´ç²»¶Ô£¬×öµÄÎ¢µ÷*/
+	padding-bottom:3px;/*å› ä¸ºå›¾è¡¨èµ„æºå°ºå¯¸ä¸å¯¹ï¼Œåšçš„å¾®è°ƒ*/
 	border: none;
 	min-width:25px;
 	min-height:18px;
@@ -215,129 +221,129 @@ QPushButton#titlebarrestorebtn:pressed
 }
 
 /*/////////////////////////////////////////////////QPushButton///////////////////////////////////////////*/
-/*ÎªQPushButtonÉèÖÃÍ¨ÓÃÊôĞÔ*/
+/*ä¸ºQPushButtonè®¾ç½®é€šç”¨å±æ€§*/
 QPushButton
 {
-	padding:0px 4px;/*ÉÏÏÂpaddingÎª0px ×óÓÒÎ´6px {1,4}ÎªÉÏÓÒÏÂ×ó*/
+	padding:0px 4px;/*ä¸Šä¸‹paddingä¸º0px å·¦å³æœª6px {1,4}ä¸ºä¸Šå³ä¸‹å·¦*/
 	min-width:80;
 	min-height:24;
-	border: 1px solid #aaaaaa;/*±ß¿ò*/
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
-	outline:none;/*±íÊ¾foucs×´Ì¬Ê±È¡ÏûĞéÏß¿ò*/
+	border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	outline:none;/*è¡¨ç¤ºfoucsçŠ¶æ€æ—¶å–æ¶ˆè™šçº¿æ¡†*/
 }
 
 QPushButton::disabled
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
-/*Îªhover×´Ì¬QPushButtonÉèÖÃÊôĞÔ£¬×¢ÒâhoverÎ±×´Ì¬ÉèÖÃÒ»¶¨ÒªÔÚpressedÎ±×´Ì¬Ö®Ç°£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡*/
+/*ä¸ºhoverçŠ¶æ€QPushButtonè®¾ç½®å±æ€§ï¼Œæ³¨æ„hoverä¼ªçŠ¶æ€è®¾ç½®ä¸€å®šè¦åœ¨pressedä¼ªçŠ¶æ€ä¹‹å‰ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼*/
 QPushButton:hover
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*Îªpressed×´Ì¬QPushButtonÉèÖÃÊôĞÔ*/
+/*ä¸ºpressedçŠ¶æ€QPushButtonè®¾ç½®å±æ€§*/
 QPushButton:pressed
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*°´Å¥ÎªÄ¬ÈÏ°´Å¥Ê±£¨²»¹Ü½¹µãÖ±½Ó½ÓÊÕ¼üÅÌ»Ø³µÊäÈëµÄ°´Å¥£©£¬Ò»°ã¶Ô»°¿òok°´Å¥ÎªÄ¬ÈÏ°´Å¥*/
+/*æŒ‰é’®ä¸ºé»˜è®¤æŒ‰é’®æ—¶ï¼ˆä¸ç®¡ç„¦ç‚¹ç›´æ¥æ¥æ”¶é”®ç›˜å›è½¦è¾“å…¥çš„æŒ‰é’®ï¼‰ï¼Œä¸€èˆ¬å¯¹è¯æ¡†okæŒ‰é’®ä¸ºé»˜è®¤æŒ‰é’®*/
 .QPushButton:default
 {
-	border-width:2px;/*±ß¿ò¿í¶È*/
-	border-style:solid;/*±ß¿òÀàĞÍ*/
-	/*ÓÃ½¥±äÉ«¿ÉÒÔÓªÔì¹âÔÎ±ß¿òĞ§¹û*/
-	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ÉÏ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ÓÒ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #64bff0, stop:1 #bae3f7)/*ÏÂ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7);/*×ó±ß¿ò½¥±äÉ«*/
+	border-width:2px;/*è¾¹æ¡†å®½åº¦*/
+	border-style:solid;/*è¾¹æ¡†ç±»å‹*/
+	/*ç”¨æ¸å˜è‰²å¯ä»¥è¥é€ å…‰æ™•è¾¹æ¡†æ•ˆæœ*/
+	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ä¸Šè¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*å³è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #64bff0, stop:1 #bae3f7)/*ä¸‹è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7);/*å·¦è¾¹æ¡†æ¸å˜è‰²*/
 }
 	
-/*Îªfocus×´Ì¬QPushButtonÉèÖÃÊôĞÔ£¬QPushButtondµÄ×ÓÀà,ÈçQCommandLinkButton²»ÉèÖÃ¸ÃÊôĞÔ*/
+/*ä¸ºfocusçŠ¶æ€QPushButtonè®¾ç½®å±æ€§ï¼ŒQPushButtondçš„å­ç±»,å¦‚QCommandLinkButtonä¸è®¾ç½®è¯¥å±æ€§*/
 .QPushButton:focus
 {
-	border-width:2px;/*±ß¿ò¿í¶È*/
-	border-style:solid;/*±ß¿òÀàĞÍ*/
+	border-width:2px;/*è¾¹æ¡†å®½åº¦*/
+	border-style:solid;/*è¾¹æ¡†ç±»å‹*/
 	
-	/*ÓÃ½¥±äÉ«¿ÉÒÔÓªÔì¹âÔÎ±ß¿òĞ§¹û*/
-	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ÉÏ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ÓÒ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f9b158, stop:1 #ffe189)/*ÏÂ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189);/*×ó±ß¿ò½¥±äÉ«*/
+	/*ç”¨æ¸å˜è‰²å¯ä»¥è¥é€ å…‰æ™•è¾¹æ¡†æ•ˆæœ*/
+	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ä¸Šè¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*å³è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f9b158, stop:1 #ffe189)/*ä¸‹è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189);/*å·¦è¾¹æ¡†æ¸å˜è‰²*/
 }
 
-/*ÎªQCommandLinkButtonÉèÖÃÍ¨ÓÃÊôĞÔ*/
+/*ä¸ºQCommandLinkButtonè®¾ç½®é€šç”¨å±æ€§*/
 QCommandLinkButton
 {
-	border: none;/*±ß¿ò*/
+	border: none;/*è¾¹æ¡†*/
 	background: none;
 }
 
 /*/////////////////////////////////////////////////QCheckBox///////////////////////////////////////////*/
-/*QCheckBoxµÄ¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QCheckBoxçš„å…¬ç”¨å±æ€§è®¾ç½®*/
 QCheckBox
 {
-	spacing:5px;/*Ö¸Ê¾Æ÷ÓëÎÄ×ÖÖ®¼äµÄ¾àÀë*/
-	outline:none;/*±íÊ¾foucs×´Ì¬Ê±È¡ÏûĞéÏß¿ò*/
+	spacing:5px;/*æŒ‡ç¤ºå™¨ä¸æ–‡å­—ä¹‹é—´çš„è·ç¦»*/
+	outline:none;/*è¡¨ç¤ºfoucsçŠ¶æ€æ—¶å–æ¶ˆè™šçº¿æ¡†*/
 }
 
-/*QCheckBoxÖ¸Ê¾Æ÷subcontrolÊôĞÔÉèÖÃ*/
+/*QCheckBoxæŒ‡ç¤ºå™¨subcontrolå±æ€§è®¾ç½®*/
 QCheckBox::indicator
 {
-	width:15px;/*ÉèÖÃ¹Ì¶¨¿í¶È£¬width heightÉèÖÃµÄ¿í¸ßÎªcontentÇø¿í¸ß*/
-	height:15px;/*ÉèÖÃ¹Ì¶¨¸ß¶È*/
+	width:15px;/*è®¾ç½®å›ºå®šå®½åº¦ï¼Œwidth heightè®¾ç½®çš„å®½é«˜ä¸ºcontentåŒºå®½é«˜*/
+	height:15px;/*è®¾ç½®å›ºå®šé«˜åº¦*/
 }
 
-/*QCheckBoxÖ¸Ê¾Æ÷Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QCheckBoxæŒ‡ç¤ºå™¨é€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QCheckBox::indicator:checked
 {
-	image:url(:/qss/icon/checkbox_p.png);/*Í¼Æ¬*/
+	image:url(:/qss/icon/checkbox_p.png);/*å›¾ç‰‡*/
 }
 
-/*QCheckBoxÖ¸Ê¾Æ÷Î´Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QCheckBoxæŒ‡ç¤ºå™¨æœªé€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QCheckBox::indicator:unchecked
 {
-	image:url(:/qss/icon/checkbox.png);/*Í¼Æ¬*/
+	image:url(:/qss/icon/checkbox.png);/*å›¾ç‰‡*/
 }
 
-/*QCheckBoxÖ¸Ê¾Æ÷Î´Ñ¡ÖĞÊ±ÇÒhoverÊ±ÊôĞÔÉèÖÃ*/
+/*QCheckBoxæŒ‡ç¤ºå™¨æœªé€‰ä¸­æ—¶ä¸”hoveræ—¶å±æ€§è®¾ç½®*/
 QCheckBox::indicator:unchecked:hover
 {
-	image:url(:/qss/icon/checkbox_h.png);/*Í¼Æ¬*/
+	image:url(:/qss/icon/checkbox_h.png);/*å›¾ç‰‡*/
 		
 }
 
 /*/////////////////////////////////////////////////QRadioButton///////////////////////////////////////////*/
-/*QRadioButton¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QRadioButtonå…¬ç”¨å±æ€§è®¾ç½®*/
 QRadioButton
 {
-	spacing:5px;/*Ö¸Ê¾Æ÷ÓëÎÄ×ÖÖ®¼äµÄ¾àÀë*/
-	outline:none;/*±íÊ¾foucs×´Ì¬Ê±È¡ÏûĞéÏß¿ò*/
+	spacing:5px;/*æŒ‡ç¤ºå™¨ä¸æ–‡å­—ä¹‹é—´çš„è·ç¦»*/
+	outline:none;/*è¡¨ç¤ºfoucsçŠ¶æ€æ—¶å–æ¶ˆè™šçº¿æ¡†*/
 }
 
-/*QRadioButtonÖ¸Ê¾Æ÷Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QRadioButtonæŒ‡ç¤ºå™¨é€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QRadioButton::indicator
 {
-	width:15px;/*ÉèÖÃ¹Ì¶¨¿í¶È£¬width heightÉèÖÃµÄ¿í¸ßÎªcontentÇø¿í¸ß*/
-	height:15px;/*ÉèÖÃ¹Ì¶¨¿í¶È*/
+	width:15px;/*è®¾ç½®å›ºå®šå®½åº¦ï¼Œwidth heightè®¾ç½®çš„å®½é«˜ä¸ºcontentåŒºå®½é«˜*/
+	height:15px;/*è®¾ç½®å›ºå®šå®½åº¦*/
 }
 
-/*QRadioButtonÖ¸Ê¾Æ÷Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QRadioButtonæŒ‡ç¤ºå™¨é€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QRadioButton::indicator:checked
 {
 	image:url(:/qss/icon/radio_p.png);/**/
 }
 
-/*QRadioButtonÖ¸Ê¾Æ÷Î´Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QRadioButtonæŒ‡ç¤ºå™¨æœªé€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QRadioButton::indicator:unchecked
 {
 	image:url(:/qss/icon/radio.png);/**/
 }
 
-/*QRadioButtonÖ¸Ê¾Æ÷Î´Ñ¡ÖĞÂÓ¹ıÊ±ÊôĞÔÉèÖÃ*/
+/*QRadioButtonæŒ‡ç¤ºå™¨æœªé€‰ä¸­æ è¿‡æ—¶å±æ€§è®¾ç½®*/
 QRadioButton::indicator:unchecked:hover
 {
 	image:url(:/qss/icon/radio_h.png);/**/
@@ -345,7 +351,7 @@ QRadioButton::indicator:unchecked:hover
 }
 
 /*/////////////////////////////////////////////////QLineEdit///////////////////////////////////////////*/
-/*QLineEdit¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QLineEditå…¬ç”¨å±æ€§è®¾ç½®*/
 QLineEdit 
 {
  	padding:1px;
@@ -356,19 +362,19 @@ QLineEdit
 }
 
 
-/*QLineEdit»ñµÃ½¹µãÊ±µÄÊôĞÔÉèÖÃ£¬Ö÷ÒªÎª¹âÔÎ±ß¿ò
-ÕâÀï´øÁË.£¬ËùÒÔ¸ÃÊôĞÔ½ö¶ÔQLineEditÖ±½ÓÀà¶ÔÏóÉúĞ§£¬ÕâÑù×öµÄÄ¿µÄÔÚÓÚ£¬¿É±à¼­QTableWidget±à¼­itemÊ±µÄ±à¼­¿ò²»´ø±ß¿ò*/
+/*QLineEditè·å¾—ç„¦ç‚¹æ—¶çš„å±æ€§è®¾ç½®ï¼Œä¸»è¦ä¸ºå…‰æ™•è¾¹æ¡†
+è¿™é‡Œå¸¦äº†.ï¼Œæ‰€ä»¥è¯¥å±æ€§ä»…å¯¹QLineEditç›´æ¥ç±»å¯¹è±¡ç”Ÿæ•ˆï¼Œè¿™æ ·åšçš„ç›®çš„åœ¨äºï¼Œå¯ç¼–è¾‘QTableWidgetç¼–è¾‘itemæ—¶çš„ç¼–è¾‘æ¡†ä¸å¸¦è¾¹æ¡†*/
 .QLineEdit:focus1
 {
-  	padding:0px;/*padding£¬ÕâÀï±ß¿òÎª2pxÎªÁË²»ÒıÆğcontent³ß´ç±ä»¯paddingÉèÖÃÎª0*/
+  	padding:0px;/*paddingï¼Œè¿™é‡Œè¾¹æ¡†ä¸º2pxä¸ºäº†ä¸å¼•èµ·contentå°ºå¯¸å˜åŒ–paddingè®¾ç½®ä¸º0*/
     padding-left:3px;
-    border-width:2px;/*±ß¿ò¿í¶È*/
-	border-style:solid;/*±ß¿òÀàĞÍ*/
-	/*ÓÃ½¥±äÉ«¿ÉÒÔÓªÔì¹âÔÎ±ß¿òĞ§¹û*/
-	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ÉÏ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ÓÒ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f9b158, stop:1 #ffe189)/*ÏÂ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189);/*×ó±ß¿ò½¥±äÉ«*/
+    border-width:2px;/*è¾¹æ¡†å®½åº¦*/
+	border-style:solid;/*è¾¹æ¡†ç±»å‹*/
+	/*ç”¨æ¸å˜è‰²å¯ä»¥è¥é€ å…‰æ™•è¾¹æ¡†æ•ˆæœ*/
+	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*ä¸Šè¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f9b158, stop:1 #ffe189)/*å³è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f9b158, stop:1 #ffe189)/*ä¸‹è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #f9b158, stop:1 #ffe189);/*å·¦è¾¹æ¡†æ¸å˜è‰²*/
 }
 
 QLineEdit:read-only
@@ -401,121 +407,121 @@ QTextEdit
  
 
 /*/////////////////////////////////////////////////QComboBox///////////////////////////////////////////*/ 
-/*QComboBoxÉèÖÃ¹«ÓÃÊôĞÔ*/
+/*QComboBoxè®¾ç½®å…¬ç”¨å±æ€§*/
 QComboBox
 {
- 	border: 1px solid #aaaaaa;/*±ß¿ò*/
- 	padding:2px 18px 2px 3px;/*ÄÚ±ß¾à£¬ÓĞÆ«ÒÆ18pxÎªdrop-down°´Å¥Áô³ö¿Õ¼ä£¬ËùÒÔsubcontrol-originÊôĞÔĞëÉèÎªpadding*/
- 	min-width:36px;/*×îĞ¡¿í¶ÈÎª6em emºÍpxÒ»ÑùÎª³¤¶Èµ¥Î»¡£em±íÊ¾¶ÔÓ¦×ÖÌåMµÄ¿í¶È¡£MÎª´óĞ´×ÖÄ¸µÄ×î´ó¿í¶È*/
+ 	border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+ 	padding:2px 18px 2px 3px;/*å†…è¾¹è·ï¼Œæœ‰åç§»18pxä¸ºdrop-downæŒ‰é’®ç•™å‡ºç©ºé—´ï¼Œæ‰€ä»¥subcontrol-originå±æ€§é¡»è®¾ä¸ºpadding*/
+ 	min-width:36px;/*æœ€å°å®½åº¦ä¸º6em emå’Œpxä¸€æ ·ä¸ºé•¿åº¦å•ä½ã€‚emè¡¨ç¤ºå¯¹åº”å­—ä½“Mçš„å®½åº¦ã€‚Mä¸ºå¤§å†™å­—æ¯çš„æœ€å¤§å®½åº¦*/
 }
 
-/*QLineEdit»ñµÃ½¹µãÊ±µÄÊôĞÔÉèÖÃ£¬ÉèÖÃ±ß¿òÎª¹âÔÎ±ß¿ò*/
+/*QLineEditè·å¾—ç„¦ç‚¹æ—¶çš„å±æ€§è®¾ç½®ï¼Œè®¾ç½®è¾¹æ¡†ä¸ºå…‰æ™•è¾¹æ¡†*/
 QComboBox:focus1
 {
-  	padding:1px 17px 1px 2px;/*padding£¬ÕâÀï±ß¿òÎª2pxÎªÁË²»ÒıÆğcontent³ß´ç±ä»¯padding¾ù¼õ1*/
+  	padding:1px 17px 1px 2px;/*paddingï¼Œè¿™é‡Œè¾¹æ¡†ä¸º2pxä¸ºäº†ä¸å¼•èµ·contentå°ºå¯¸å˜åŒ–paddingå‡å‡1*/
     border-width:2px;
 	border-style:solid;
-	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ÉÏ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ÓÒ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #64bff0, stop:1 #bae3f7)/*ÏÂ±ß¿ò½¥±äÉ«*/
-	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7);/*×ó±ß¿ò½¥±äÉ«*/
+	border-color:qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*ä¸Šè¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #64bff0, stop:1 #bae3f7)/*å³è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #64bff0, stop:1 #bae3f7)/*ä¸‹è¾¹æ¡†æ¸å˜è‰²*/
+	  qlineargradient(x1:1, y1:0, x2:0, y2:0, stop:0 #64bff0, stop:1 #bae3f7);/*å·¦è¾¹æ¡†æ¸å˜è‰²*/
 }
 
-/*ÉèÖÃdrop-down°´Å¥ÉÏµÄ¼ıÍ·Í¼Æ¬*/
+/*è®¾ç½®drop-downæŒ‰é’®ä¸Šçš„ç®­å¤´å›¾ç‰‡*/
 QComboBox::down-arrow 
 {
     image:url(:/qss/icon/downarrow.png);
 }
 
-/*ÉèÖÃdrop-down°´Å¥ÊôĞÔ£¬×Ô¶¨ÒåcomboxµÄÖØÍ·Ï·¡£±ØĞëÉèÖÃ*/
+/*è®¾ç½®drop-downæŒ‰é’®å±æ€§ï¼Œè‡ªå®šä¹‰comboxçš„é‡å¤´æˆã€‚å¿…é¡»è®¾ç½®*/
 QComboBox::drop-down {
-    width:15px;/*drop-down°´Å¥¿í¶È*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*drop-down°´Å¥½¥±ä±³¾°É«*/
-	subcontrol-origin: padding;/*drop-down°´Å¥»æÖÆÎ»ÖÃÒÀ¾İ¸¸¿Ø¼şÉèÖÃµÄpadding¾ö¶¨*/
-    subcontrol-position: right top;/*drop-down°´Å¥Ïà¶Ô¸¸¿Ø¼şÎ»ÖÃ*/
-    border-left:1px solid #aaaaaa;/*drop-down×ó±ß¿ò*/
+    width:15px;/*drop-downæŒ‰é’®å®½åº¦*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*drop-downæŒ‰é’®æ¸å˜èƒŒæ™¯è‰²*/
+	subcontrol-origin: padding;/*drop-downæŒ‰é’®ç»˜åˆ¶ä½ç½®ä¾æ®çˆ¶æ§ä»¶è®¾ç½®çš„paddingå†³å®š*/
+    subcontrol-position: right top;/*drop-downæŒ‰é’®ç›¸å¯¹çˆ¶æ§ä»¶ä½ç½®*/
+    border-left:1px solid #aaaaaa;/*drop-downå·¦è¾¹æ¡†*/
 }
 
-/*ÉèÖÃQComboBoxµÄ£ºÏÂÀ­Ê±µÄÊÓÍ¼ÊôĞÔ¡£×¢ÒâÕâ²»ÊÇÉèÖÃµÄÊÓÍ¼Ïî£¬¶øÊÇÊÓÍ¼ÏîÖ÷³ÇµÄÊÓÍ¼
-×ÓËï´°¿Ú²¿¼ş£¬ÓÃ¿Õ¸ñ¸ô¿ª¡£*/
+/*è®¾ç½®QComboBoxçš„ï¼šä¸‹æ‹‰æ—¶çš„è§†å›¾å±æ€§ã€‚æ³¨æ„è¿™ä¸æ˜¯è®¾ç½®çš„è§†å›¾é¡¹ï¼Œè€Œæ˜¯è§†å›¾é¡¹ä¸»åŸçš„è§†å›¾
+å­å­™çª—å£éƒ¨ä»¶ï¼Œç”¨ç©ºæ ¼éš”å¼€ã€‚*/
 QComboBox QAbstractItemView 
 {
-     border: 1px solid #aaaaaa;/*±ß¿ò*/
-     selection-background-color: #73c5f1;/*Ñ¡ÖĞ±³¾°*/
-     outline:none;/*È¥µôÑ¡ÖĞÊ±µÄĞéÏß¿ò*/
+     border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+     selection-background-color: #73c5f1;/*é€‰ä¸­èƒŒæ™¯*/
+     outline:none;/*å»æ‰é€‰ä¸­æ—¶çš„è™šçº¿æ¡†*/
 }
 
 /*/////////////////////////////////////////////////QGroupBox///////////////////////////////////////////*/ 
-/*QGroupBox¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QGroupBoxå…¬ç”¨å±æ€§è®¾ç½®*/
  QGroupBox {
-     background: none;/*±³¾°Í¸Ã÷*/
-     border: 1px solid #aaaaaa;/*±ß¿ò*/
-     border-radius: 5px;/*±ß¿òÔ²½Ç*/
-     margin-top: 2ex; /* Îªtitle»æÖÆÁô³ö¿Õ¼ä£¬ÒÔÏÂtitle×Ó¿ØÖÆÆ÷µÄsubcontrol-originÉèÖÃÎªmargin */
+     background: none;/*èƒŒæ™¯é€æ˜*/
+     border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+     border-radius: 5px;/*è¾¹æ¡†åœ†è§’*/
+     margin-top: 2ex; /* ä¸ºtitleç»˜åˆ¶ç•™å‡ºç©ºé—´ï¼Œä»¥ä¸‹titleå­æ§åˆ¶å™¨çš„subcontrol-originè®¾ç½®ä¸ºmargin */
  }
 
-/*QGroupBox title×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ*/
+/*QGroupBox titleå­æ§åˆ¶å™¨å±æ€§è®¾ç½®*/
 QGroupBox::title 
 {
-	color:#3399ff;/*ÎÄ±¾ÑÕÉ«*/
- 	left:10px;/*×Ó¿ØÖÆÆ÷Ïà¶ÔÓÚ¸¸¿Ø¼şµÄ¾«È·¶¨Î»*/
-    subcontrol-origin: margin;/*×Ó¿ØÖÆÆ÷»æÖÆÆğÊ¼ÇøÓò*/
-    subcontrol-position: top left; /*×Ó¿ØÖÆÆ÷ÓÚ¸¸¿Ø¼şµÄÏà¶ÔÎ»ÖÃ*/
-    padding: 0px 2px;/*titleÎÄ×Ö×óÓÒpaddingÉèÖÃÊ¹±ß¿òÏßÌõÓëtitleÎÄ×ÖÓĞ¼ä¸ô¾àÀë*/
-    background: none;/*±³¾°Í¸Ã÷*/
+	color:#3399ff;/*æ–‡æœ¬é¢œè‰²*/
+ 	left:10px;/*å­æ§åˆ¶å™¨ç›¸å¯¹äºçˆ¶æ§ä»¶çš„ç²¾ç¡®å®šä½*/
+    subcontrol-origin: margin;/*å­æ§åˆ¶å™¨ç»˜åˆ¶èµ·å§‹åŒºåŸŸ*/
+    subcontrol-position: top left; /*å­æ§åˆ¶å™¨äºçˆ¶æ§ä»¶çš„ç›¸å¯¹ä½ç½®*/
+    padding: 0px 2px;/*titleæ–‡å­—å·¦å³paddingè®¾ç½®ä½¿è¾¹æ¡†çº¿æ¡ä¸titleæ–‡å­—æœ‰é—´éš”è·ç¦»*/
+    background: none;/*èƒŒæ™¯é€æ˜*/
  }
 
 /*/////////////////////////////////////////////////QProgressBar///////////////////////////////////////////*/ 
-/*QProgressBar¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QProgressBarå…¬ç”¨å±æ€§è®¾ç½®*/
 QProgressBar 
 {
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
-    background: white;/*qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #eeeeee, stop:1 #ffffff);½¥±ä±³¾°*/
-    border-radius: 4px;/*±ß¿òÔ²½Ç*/
-    text-align:center;/*ÎÄ±¾¶ÔÆë*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    background: white;/*qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #eeeeee, stop:1 #ffffff);æ¸å˜èƒŒæ™¯*/
+    border-radius: 4px;/*è¾¹æ¡†åœ†è§’*/
+    text-align:center;/*æ–‡æœ¬å¯¹é½*/
 }
 
-/*chunk×Ó¿ØÖÆÆ÷£¬Ö¸½ø¶ÈÌõÄÚÒ»¿é¿éÒÀ´ÎÏòÓÒµÄ½ø¶ÈĞ¡¿é*/
+/*chunkå­æ§åˆ¶å™¨ï¼ŒæŒ‡è¿›åº¦æ¡å†…ä¸€å—å—ä¾æ¬¡å‘å³çš„è¿›åº¦å°å—*/
 QProgressBar::chunk 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1); /*½ø¶ÈĞ¡¿é±³¾°*/
-    width: 6px;/*½ø¶ÈĞ¡¿é¿í¶È*/
-    margin: 0.5px;/*½ø¶ÈĞ¡¿émarginÉèÖÃÎª0.5pxÒÔÉÏ¿ÉÒÔ¸ô¿ª½ø¶ÈĞ¡¿é¡£¸ô¿ª¾àÀëÎª2*margin ¡£ÉèÖÃÎª0.5ÒÔÏÂ½ø¶ÈĞ¡¿éÁ¬ÔÚÒ»Æğ*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1); /*è¿›åº¦å°å—èƒŒæ™¯*/
+    width: 6px;/*è¿›åº¦å°å—å®½åº¦*/
+    margin: 0.5px;/*è¿›åº¦å°å—marginè®¾ç½®ä¸º0.5pxä»¥ä¸Šå¯ä»¥éš”å¼€è¿›åº¦å°å—ã€‚éš”å¼€è·ç¦»ä¸º2*margin ã€‚è®¾ç½®ä¸º0.5ä»¥ä¸‹è¿›åº¦å°å—è¿åœ¨ä¸€èµ·*/
 }
 
 /*/////////////////////////////////////////////////QSlider///////////////////////////////////////////*/ 
-/*QSliderË®Æ½°¼²ÛÊôĞÔÉèÖÃ£¬Î´ÉèÖÃ±³¾°ÒòÎªËü·´Õı»á±»add-page subControl¸²¸Ç*/
+/*QSlideræ°´å¹³å‡¹æ§½å±æ€§è®¾ç½®ï¼Œæœªè®¾ç½®èƒŒæ™¯å› ä¸ºå®ƒåæ­£ä¼šè¢«add-page subControlè¦†ç›–*/
 QSlider::groove:horizontal 
 {
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
-    height: 6px; /*Ë®Æ½°¼²Û¸ß¶È*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    height: 6px; /*æ°´å¹³å‡¹æ§½é«˜åº¦*/
 }
 
-/*QSliderË®Æ½»¬¿éÊôĞÔÉèÖÃ*/
+/*QSlideræ°´å¹³æ»‘å—å±æ€§è®¾ç½®*/
 QSlider::handle:horizontal 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:1 #666666, stop:0.5 #dddddd);/*½¥±ä±³¾°*/
-    border: 1px solid #5c5c5c;/*±ß¿ò*/
-    width: 6px;/*»¬¿é¿í¶È*/
-    margin: -6px 0;/*Í¨¹ıÉèÖÃmarginÉÏÏÂmarginÎª-6px£¬Ê¹µÃ»¬¿é¸ß¶È±È°¼²Û¸ß¶È¸ß12px¡£*/
-    border-radius: 4px;/*Ô²½Ç±ß¿ò*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:1 #666666, stop:0.5 #dddddd);/*æ¸å˜èƒŒæ™¯*/
+    border: 1px solid #5c5c5c;/*è¾¹æ¡†*/
+    width: 6px;/*æ»‘å—å®½åº¦*/
+    margin: -6px 0;/*é€šè¿‡è®¾ç½®marginä¸Šä¸‹marginä¸º-6pxï¼Œä½¿å¾—æ»‘å—é«˜åº¦æ¯”å‡¹æ§½é«˜åº¦é«˜12pxã€‚*/
+    border-radius: 4px;/*åœ†è§’è¾¹æ¡†*/
  }
 
-/*Í¨¹ıadd-page subControlÉèÖÃÎ´»®¹ı²¿·ÖµÄ±³¾°*/
+/*é€šè¿‡add-page subControlè®¾ç½®æœªåˆ’è¿‡éƒ¨åˆ†çš„èƒŒæ™¯*/
 QSlider::add-page:horizontal 
 {
     border: 1px solid #aaaaaa;
     background: white;/*qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #eeeeee, stop:1 #ffffff);*/
 }
 
-/*Í¨¹ısub-page subControlÉèÖÃ»®¹ı²¿·ÖµÄ±³¾°*/
+/*é€šè¿‡sub-page subControlè®¾ç½®åˆ’è¿‡éƒ¨åˆ†çš„èƒŒæ™¯*/
 QSlider::sub-page:horizontal 
 {
 	border: 1px solid #aaaaaa;
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1); 
 }
  
-/*´¹Ö±»¬¶¯Ìõ£º´óÍ¬Ğ¡Òì*/
+/*å‚ç›´æ»‘åŠ¨æ¡ï¼šå¤§åŒå°å¼‚*/
 QSlider::groove:vertical 
 {
    border: 1px solid #aaaaaa;
@@ -524,7 +530,7 @@ QSlider::groove:vertical
 
 QSlider::handle:vertical 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:1 #666666, stop:0.4 #dddddd);/*½¥±ä±³¾°*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:1 #666666, stop:0.4 #dddddd);/*æ¸å˜èƒŒæ™¯*/
     border: 1px solid #5c5c5c;
     height: 6px;
     margin: 0px -6px;
@@ -545,108 +551,108 @@ QSlider::sub-page:vertical
 
 
 /*/////////////////////////////////////////////////QScrollBar///////////////////////////////////////////*/ 
-/*Ë®Æ½¹ö¶¯Ìõ¹«ÓÃÊôĞÔÉèÖÃ*/
+/*æ°´å¹³æ»šåŠ¨æ¡å…¬ç”¨å±æ€§è®¾ç½®*/
 QScrollBar:horizontal
 {
-    border-top: 1px solid #aaaaaa;/*±ß¿ò*/
-    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);½¥±ä±³¾°£¬Ò²ÊÇ»¬¹ì±³¾°*/
+    border-top: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);æ¸å˜èƒŒæ™¯ï¼Œä¹Ÿæ˜¯æ»‘è½¨èƒŒæ™¯*/
     background:white;
-    height: 16px;/*Ë®Æ½¹ö¶¯Ìõ¸ß¶È*/
-    margin: 0px 16px 0 16px;/*Ë®Æ½¹ö¶¯Ìõmargin£¬×óÓÒÁô³ö¿Õ¼ä¸øadd-line°´Å¥ºÍsub-line°´Å¥*/
+    height: 16px;/*æ°´å¹³æ»šåŠ¨æ¡é«˜åº¦*/
+    margin: 0px 16px 0 16px;/*æ°´å¹³æ»šåŠ¨æ¡marginï¼Œå·¦å³ç•™å‡ºç©ºé—´ç»™add-lineæŒ‰é’®å’Œsub-lineæŒ‰é’®*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõ»¬¿é¹«ÓÃÊôĞÔÉèÖÃ*/
+/*æ°´å¹³æ»šåŠ¨æ¡æ»‘å—å…¬ç”¨å±æ€§è®¾ç½®*/
 QScrollBar::handle:horizontal 
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1);±³¾°*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
-    min-width: 20px;/*×îĞ¡¿í¶È£¬»¬¿é¿í¶È×Ô¶¯µ÷Õûµ«ĞëÉèÖÃÒ»¸ö×îĞ¡¿í¶È*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1);èƒŒæ™¯*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+    min-width: 20px;/*æœ€å°å®½åº¦ï¼Œæ»‘å—å®½åº¦è‡ªåŠ¨è°ƒæ•´ä½†é¡»è®¾ç½®ä¸€ä¸ªæœ€å°å®½åº¦*/
     border-radius: 0px;/**/
     border-left:1px solid #aaaaaa;
     border-right:1px solid #aaaaaa;
 }
 
-/*Ë®Æ½¹ö¶¯Ìõ»¬¿é±»ÂÓ¹ıÊ±*/
+/*æ°´å¹³æ»šåŠ¨æ¡æ»‘å—è¢«æ è¿‡æ—¶*/
 QScrollBar::handle:horizontal:hover
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #90d9fe, stop:0.6 #e2f3fc, stop:1 #90d9fe);½¥±ä±³¾°*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #eeeeee, stop:1 #ffffff);/*½¥±ä±³¾°É«*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #90d9fe, stop:0.6 #e2f3fc, stop:1 #90d9fe);æ¸å˜èƒŒæ™¯*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.2 #eeeeee, stop:1 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõ»¬¿é±»°´Ñ¹Ê±*/
+/*æ°´å¹³æ»šåŠ¨æ¡æ»‘å—è¢«æŒ‰å‹æ—¶*/
 QScrollBar::handle:horizontal:pressed
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1,  stop:0 #60c8fd, stop:0.6 #bde4f8, stop:1 #60c8fd);½¥±ä±³¾°*/
-   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1,  stop:0 #60c8fd, stop:0.6 #bde4f8, stop:1 #60c8fd);æ¸å˜èƒŒæ™¯*/
+   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõsub-line£¨Ôö¼ÓÒ»ĞĞ£©°´Å¥*/
+/*æ°´å¹³æ»šåŠ¨æ¡sub-lineï¼ˆå¢åŠ ä¸€è¡Œï¼‰æŒ‰é’®*/
 QScrollBar::add-line:horizontal 
 {
-    border-top: 1px solid #aaaaaa;/*±ß¿ò*/
-    border-left: 1px solid #aaaaaa;/*±ß¿ò*/
-    border-right: 1px solid #aaaaaa;/*±ß¿ò*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°*/
-    width: 16px;/*¿í¶È£¬¸ú¸¸¿Ø¼şmarginÆ¥Åä*/
-    subcontrol-position: right;/*sub-line°´Å¥Ïà¶ÔÓÚ¸¸¿Ø¼şÎ»ÖÃÉèÖÃ*/
-    subcontrol-origin: margin;/*sub-line°´Å¥»æÖÆ¿Õ¼ä£¬Ö®Ç°¸¸¿Ø¼şÉèÖÃÁËmarginÎªsub-lineÁô³öÁË¿Ø¼ş*/
+    border-top: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    border-left: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    border-right: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
+    width: 16px;/*å®½åº¦ï¼Œè·Ÿçˆ¶æ§ä»¶marginåŒ¹é…*/
+    subcontrol-position: right;/*sub-lineæŒ‰é’®ç›¸å¯¹äºçˆ¶æ§ä»¶ä½ç½®è®¾ç½®*/
+    subcontrol-origin: margin;/*sub-lineæŒ‰é’®ç»˜åˆ¶ç©ºé—´ï¼Œä¹‹å‰çˆ¶æ§ä»¶è®¾ç½®äº†marginä¸ºsub-lineç•™å‡ºäº†æ§ä»¶*/
 }
  
-/*Ë®Æ½¹ö¶¯Ìõadd-line£¨Ôö¼ÓÒ»ĞĞ£©°´Å¥±»ÂÓ¹ıÊ±*/
+/*æ°´å¹³æ»šåŠ¨æ¡add-lineï¼ˆå¢åŠ ä¸€è¡Œï¼‰æŒ‰é’®è¢«æ è¿‡æ—¶*/
 QScrollBar::add-line:horizontal:hover
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.4 #ffffff, stop:1 #eeeeee);/*½¥±ä±³¾°*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.4 #ffffff, stop:1 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
 }
  
-/*Ë®Æ½¹ö¶¯Ìõadd-line£¨Ôö¼ÓÒ»ĞĞ£©°´Å¥±»°´Ñ¹Ê±*/
+/*æ°´å¹³æ»šåŠ¨æ¡add-lineï¼ˆå¢åŠ ä¸€è¡Œï¼‰æŒ‰é’®è¢«æŒ‰å‹æ—¶*/
 QScrollBar::add-line:horizontal:pressed
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.4 #eeeeee);/*½¥±ä±³¾°*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.4 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõsub-line£¨¼õÉÙÒ»ĞĞ£©°´Å¥*/
+/*æ°´å¹³æ»šåŠ¨æ¡sub-lineï¼ˆå‡å°‘ä¸€è¡Œï¼‰æŒ‰é’®*/
 QScrollBar::sub-line:horizontal 
 {
-    border-top: 1px solid #aaaaaa;/*±ß¿ò*/
-    border-right: 1px solid #aaaaaa;/*±ß¿ò*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°*/
-    width: 16px;/*¿í¶È£¬¸ú¸¸¿Ø¼şmarginÆ¥Åä*/
-    subcontrol-position: left;/*sub-line°´Å¥Ïà¶ÔÓÚ¸¸¿Ø¼şÎ»ÖÃÉèÖÃ*/
-    subcontrol-origin: margin;/*sub-line°´Å¥»æÖÆ¿Õ¼ä£¬Ö®Ç°¸¸¿Ø¼şÉèÖÃÁËmarginÎªsub-lineÁô³öÁË¿Ø¼ş*/
+    border-top: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    border-right: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
+    width: 16px;/*å®½åº¦ï¼Œè·Ÿçˆ¶æ§ä»¶marginåŒ¹é…*/
+    subcontrol-position: left;/*sub-lineæŒ‰é’®ç›¸å¯¹äºçˆ¶æ§ä»¶ä½ç½®è®¾ç½®*/
+    subcontrol-origin: margin;/*sub-lineæŒ‰é’®ç»˜åˆ¶ç©ºé—´ï¼Œä¹‹å‰çˆ¶æ§ä»¶è®¾ç½®äº†marginä¸ºsub-lineç•™å‡ºäº†æ§ä»¶*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõsub-line£¨¼õÉÙÒ»ĞĞ£©°´Å¥hoverÊ±*/
+/*æ°´å¹³æ»šåŠ¨æ¡sub-lineï¼ˆå‡å°‘ä¸€è¡Œï¼‰æŒ‰é’®hoveræ—¶*/
 QScrollBar::sub-line:horizontal:hover
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.4 #ffffff, stop:1 #eeeeee);/*½¥±ä±³¾°*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.4 #ffffff, stop:1 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõsub-line£¨¼õÉÙÒ»ĞĞ£©°´Å¥±»°´Ñ¹Ê±*/
+/*æ°´å¹³æ»šåŠ¨æ¡sub-lineï¼ˆå‡å°‘ä¸€è¡Œï¼‰æŒ‰é’®è¢«æŒ‰å‹æ—¶*/
 QScrollBar::sub-line:horizontal:pressed
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.4 #eeeeee);/*½¥±ä±³¾°*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.4 #eeeeee);/*æ¸å˜èƒŒæ™¯*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõ×ó¼ıÍ·ÉèÖÃÍ¼Ïñ£¨ÔÚadd-lineÖĞ¾ÓÖĞÏÔÊ¾£©*/
+/*æ°´å¹³æ»šåŠ¨æ¡å·¦ç®­å¤´è®¾ç½®å›¾åƒï¼ˆåœ¨add-lineä¸­å±…ä¸­æ˜¾ç¤ºï¼‰*/
 QScrollBar:left-arrow:horizontal
 {
-    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
-/*Ë®Æ½¹ö¶¯ÌõÓÒ¼ıÍ·ÉèÖÃÍ¼Ïñ£¨ÔÚsub-lineÖĞ¾ÓÖĞÏÔÊ¾£©*/
+/*æ°´å¹³æ»šåŠ¨æ¡å³ç®­å¤´è®¾ç½®å›¾åƒï¼ˆåœ¨sub-lineä¸­å±…ä¸­æ˜¾ç¤ºï¼‰*/
 QScrollBar::right-arrow:horizontal 
 {
-	image:url(:/qss/icon/hor_scroll_right_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+	image:url(:/qss/icon/hor_scroll_right_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
-/*Ë®Æ½¹ö¶¯Ìõadd-page,sub-pageÖ¸µ¥»÷»¬¹ìÊ±¹ö¶¯Ò»Ò³¡£¿ÉÒÔÎªadd-page,sub-pageÉèÖÃhover,pressedµÄ±³¾° */
+/*æ°´å¹³æ»šåŠ¨æ¡add-page,sub-pageæŒ‡å•å‡»æ»‘è½¨æ—¶æ»šåŠ¨ä¸€é¡µã€‚å¯ä»¥ä¸ºadd-page,sub-pageè®¾ç½®hover,pressedçš„èƒŒæ™¯ */
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal 
 {
-     background: none;/*²»ÉèÖÃadd-page,sub-page±³¾°*/
+     background: none;/*ä¸è®¾ç½®add-page,sub-pageèƒŒæ™¯*/
 }
 
 
-/*´¹Ö±¹ö¶¯Ìõ£¬´óÍ¬Ğ¡Òì*/
+/*å‚ç›´æ»šåŠ¨æ¡ï¼Œå¤§åŒå°å¼‚*/
 QScrollBar:vertical
 {
     border-left: 1px solid #aaaaaa;
@@ -658,8 +664,8 @@ QScrollBar:vertical
 
 QScrollBar::handle:vertical 
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1);½¥±ä±³¾°É«*/
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #73c5f1, stop:0.6 #bde4f8, stop:1 #73c5f1);æ¸å˜èƒŒæ™¯è‰²*/
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     min-height: 20px;
     border-radius: 0px;
     border-top:1px solid #aaaaaa;
@@ -668,14 +674,14 @@ QScrollBar::handle:vertical
 
 QScrollBar::handle:vertical:hover
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #90d9fe, stop:0.6 #e2f3fc, stop:1 #90d9fe);½¥±ä±³¾°*/
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0.2 #eeeeee, stop:1 #ffffff);/*½¥±ä±³¾°É«*/
+    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #90d9fe, stop:0.6 #e2f3fc, stop:1 #90d9fe);æ¸å˜èƒŒæ™¯*/
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0.2 #eeeeee, stop:1 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QScrollBar::handle:vertical:pressed
 {
-    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #60c8fd, stop:0.6 #bde4f8, stop:1 #60c8fd);½¥±ä±³¾°É«*/
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #60c8fd, stop:0.6 #bde4f8, stop:1 #60c8fd);æ¸å˜èƒŒæ™¯è‰²*/
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
  
 QScrollBar::add-line:vertical 
@@ -735,7 +741,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
 }
 
 /*
-Ò»ÖÖ¸üÎª¼ò½àµÄ¹ö¶¯Ìõ
+ä¸€ç§æ›´ä¸ºç®€æ´çš„æ»šåŠ¨æ¡
 QScrollBar:horizontal
 {
     background: #f2f2f2;
@@ -804,25 +810,25 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
 */
 
 /*/////////////////////////////////////////////////QTabWidget///////////////////////////////////////////*/ 
-/*QTabWidgetÓÉ×Ó¿ØÖÆÆ÷paneºÍtab-bar×é³É¡£paneÎªtabÒ³ËùÔÚÇøÓò£¬tab-barÎªtab±êÇ©À¸ËùÔÚÇøÓò*/
-/*QTabWidget pane×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ*/
+/*QTabWidgetç”±å­æ§åˆ¶å™¨paneå’Œtab-barç»„æˆã€‚paneä¸ºtabé¡µæ‰€åœ¨åŒºåŸŸï¼Œtab-barä¸ºtabæ ‡ç­¾æ æ‰€åœ¨åŒºåŸŸ*/
+/*QTabWidget paneå­æ§åˆ¶å™¨å±æ€§è®¾ç½®*/
 QTabWidget::pane 
 {
-    border: 0px solid #aaaaaa; /*tabÓĞ±ß¿òpane¾Í²»Òª±ß¿òÁË*/
-    margin-top:-1px;/*ÉèÖÃmargin-topÎª-1ÊÇÎªÁËÈÃtab-barÕÚµôpaneµÄÉÏ±ß¿ò*/
+    border: 0px solid #aaaaaa; /*tabæœ‰è¾¹æ¡†paneå°±ä¸è¦è¾¹æ¡†äº†*/
+    margin-top:-1px;/*è®¾ç½®margin-topä¸º-1æ˜¯ä¸ºäº†è®©tab-baré®æ‰paneçš„ä¸Šè¾¹æ¡†*/
 }
 
-/*QTabWidget tab-bar×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ*/
+/*QTabWidget tab-barå­æ§åˆ¶å™¨å±æ€§è®¾ç½®*/
 QTabWidget::tab-bar 
 {
-    left: 3px; /*left±íÊ¾×Ó¿ØÖÆÆ÷¾à¸¸¿Ø¼ş×ó±ßµÄ¾àÀë¶¨Î»*/
+    left: 3px; /*leftè¡¨ç¤ºå­æ§åˆ¶å™¨è·çˆ¶æ§ä»¶å·¦è¾¹çš„è·ç¦»å®šä½*/
 }
 
-/*tab-bar×Ó¿ØÖÆÆ÷£¨tab±êÇ©À¸£©ÓÖÓÉtab±êÇ©×é³É£¬×Ó¿ØÖÆÆ÷tab±íÊ¾tab±êÇ©*/
+/*tab-barå­æ§åˆ¶å™¨ï¼ˆtabæ ‡ç­¾æ ï¼‰åˆç”±tabæ ‡ç­¾ç»„æˆï¼Œå­æ§åˆ¶å™¨tabè¡¨ç¤ºtabæ ‡ç­¾*/
 QTabBar::tab 
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
-	border-left: 1px solid #aaaaaa;/*±ß¿ò£¬²»ÉèÖÃ±êÇ©µ×²¿±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border-left: 1px solid #aaaaaa;/*è¾¹æ¡†ï¼Œä¸è®¾ç½®æ ‡ç­¾åº•éƒ¨è¾¹æ¡†*/
 	border-right: 1px solid #aaaaaa;/**/
 	border-top: 1px solid #aaaaaa;/**/
 	border-top-left-radius: 6px;/**/
@@ -831,190 +837,190 @@ QTabBar::tab
 	padding: 4px;/**/
 }
 
-/*tab±êÇ©±»Ñ¡ÖĞ»òÂÓ¹ıÊ±*/
+/*tabæ ‡ç­¾è¢«é€‰ä¸­æˆ–æ è¿‡æ—¶*/
 QTabBar::tab:selected, QTabBar::tab:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*tab±êÇ©±»Ñ¡ÖĞÊ±*/
+/*tabæ ‡ç­¾è¢«é€‰ä¸­æ—¶*/
 QTabBar::tab:selected
 {
-	border-bottom: 3px solid #73c5f1;/*ÉèÖÃµ×²¿±ß¿ò*/
-	margin-left: -4px;/*ÉèÖÃmargin-topÎª-4pxÊÇÎªÁËÀ©´óÑ¡ÖĞ±êÇ©¿í¶È£¬Ê¹µÃÑ¡ÖĞ±êÇ©¿í¶È´óÓÚÎ´Ñ¡ÖĞ±êÇ©*/
+	border-bottom: 3px solid #73c5f1;/*è®¾ç½®åº•éƒ¨è¾¹æ¡†*/
+	margin-left: -4px;/*è®¾ç½®margin-topä¸º-4pxæ˜¯ä¸ºäº†æ‰©å¤§é€‰ä¸­æ ‡ç­¾å®½åº¦ï¼Œä½¿å¾—é€‰ä¸­æ ‡ç­¾å®½åº¦å¤§äºæœªé€‰ä¸­æ ‡ç­¾*/
     margin-right: -4px;/**/
 }
 
-/*tab±êÇ©Î´±»Ñ¡ÖĞÊ±*/
+/*tabæ ‡ç­¾æœªè¢«é€‰ä¸­æ—¶*/
 QTabBar::tab:!selected 
 {
-	border-bottom: 1px solid #aaaaaa;/*ÉèÖÃµ×²¿±ß¿ò*/
-    margin-top: 2px;/*ÉèÖÃmargin-topÎªÁËÑ¹Ëõ±êÇ©´óĞ¡£¬Ê¹µÃÎ´Ñ¡ÖĞ±êÇ©¸ß¶ÈĞ¡ÓÚÑ¡ÖĞ±êÇ©*/
+	border-bottom: 1px solid #aaaaaa;/*è®¾ç½®åº•éƒ¨è¾¹æ¡†*/
+    margin-top: 2px;/*è®¾ç½®margin-topä¸ºäº†å‹ç¼©æ ‡ç­¾å¤§å°ï¼Œä½¿å¾—æœªé€‰ä¸­æ ‡ç­¾é«˜åº¦å°äºé€‰ä¸­æ ‡ç­¾*/
 }
 
-/*µÚÒ»¸ötab±êÇ©±»Ñ¡ÖĞÊ±*/
+/*ç¬¬ä¸€ä¸ªtabæ ‡ç­¾è¢«é€‰ä¸­æ—¶*/
 QTabBar::tab:first:selected 
 {
-    margin-left: 0px; /*×ó±ß²»À©´ó¿í¶È*/
+    margin-left: 0px; /*å·¦è¾¹ä¸æ‰©å¤§å®½åº¦*/
 }
 
-/*×îºóÒ»¸ötab±êÇ©±»Ñ¡ÖĞÊ±*/
+/*æœ€åä¸€ä¸ªtabæ ‡ç­¾è¢«é€‰ä¸­æ—¶*/
 QTabBar::tab:last:selected 
 {
-    margin-right: 0px;/*ÓÒ±ß²»À©´ó¿í¶È*/
+    margin-right: 0px;/*å³è¾¹ä¸æ‰©å¤§å®½åº¦*/
 }
 
-/*Ö»ÓĞÒ»¸ötab±êÇ©Ê±*/
+/*åªæœ‰ä¸€ä¸ªtabæ ‡ç­¾æ—¶*/
 QTabBar::tab:only-one 
 {
-    margin: 0px;/*²»Ê¹ÓÃmargin¶Ô±êÇ©´óĞ¡×÷¸Ä±ä*/
+    margin: 0px;/*ä¸ä½¿ç”¨marginå¯¹æ ‡ç­¾å¤§å°ä½œæ”¹å˜*/
 }
 
-/*QTabBarÉÏ±êÇ©¹ı¶àÊ±³öÏÖµÄ×óÓÒ¼ıÍ·QToolButton°´Å¥ÊôĞÔÉèÖÃ*/
+/*QTabBarä¸Šæ ‡ç­¾è¿‡å¤šæ—¶å‡ºç°çš„å·¦å³ç®­å¤´QToolButtonæŒ‰é’®å±æ€§è®¾ç½®*/
 QTabBar QToolButton 
 { 
     border-radius: 6px;
 }
 
-/*QTabBarÉÏ±êÇ©¹ı¶àÊ±³öÏÖµÄ×óÓÒ¼ıÍ·°´Å¥¼ıÍ·Í¼Æ¬*/
+/*QTabBarä¸Šæ ‡ç­¾è¿‡å¤šæ—¶å‡ºç°çš„å·¦å³ç®­å¤´æŒ‰é’®ç®­å¤´å›¾ç‰‡*/
 QTabBar QToolButton::right-arrow 
 {
-    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
-/*QTabBarÉÏ±êÇ©¹ı¶àÊ±³öÏÖµÄ×óÓÒ¼ıÍ·°´Å¥¼ıÍ·Í¼Æ¬*/
+/*QTabBarä¸Šæ ‡ç­¾è¿‡å¤šæ—¶å‡ºç°çš„å·¦å³ç®­å¤´æŒ‰é’®ç®­å¤´å›¾ç‰‡*/
 QTabBar QToolButton::left-arrow 
 {
-    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
 
-/*/////////////////////////////////////////////////QCalendarWidgetÈÕÀú¿Ø¼ş///////////////////////////////////////////*/ 
+/*/////////////////////////////////////////////////QCalendarWidgetæ—¥å†æ§ä»¶///////////////////////////////////////////*/ 
 QCalendarWidget QToolButton
 {
 	color:Black;
 }
 
-/*QCalendarWidgetÉÏ×óÓÒ¼ıÍ·°´Å¥¼ıÍ·Í¼Æ¬*/
+/*QCalendarWidgetä¸Šå·¦å³ç®­å¤´æŒ‰é’®ç®­å¤´å›¾ç‰‡*/
 QCalendarWidget QToolButton::right-arrow 
 {
-    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
-/*QCalendarWidgetÉÏ×óÓÒ¼ıÍ·°´Å¥¼ıÍ·Í¼Æ¬*/
+/*QCalendarWidgetä¸Šå·¦å³ç®­å¤´æŒ‰é’®ç®­å¤´å›¾ç‰‡*/
 QCalendarWidget QToolButton::left-arrow 
 {
-    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+    image:url(:/qss/icon/hor_scroll_left_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
 /*/////////////////////////////////////////////////QListView/QListWidget///////////////////////////////////////////*/
-/*QListView¹«ÓÃÊôĞÔÉèÖÃ*/ 
+/*QListViewå…¬ç”¨å±æ€§è®¾ç½®*/ 
 QListView
 {
-	border:1px solid #aaaaaa;/*±ß¿ò*/
-	selection-background-color: #73c5f1;/*Ñ¡ÖĞ±³¾°*/
-	alternate-background-color:#e9e9e9;/*½»ÌæĞĞ±³¾°É«£¬´úÂëÖĞÉèÖÃÁË½»ÌæĞĞ±³¾°ÉèÓĞĞ§Ê±ÉúĞ§*/
-    outline:none;/*È¥µôÑ¡ÖĞÊ±µÄĞéÏß¿ò*/
+	border:1px solid #aaaaaa;/*è¾¹æ¡†*/
+	selection-background-color: #73c5f1;/*é€‰ä¸­èƒŒæ™¯*/
+	alternate-background-color:#e9e9e9;/*äº¤æ›¿è¡ŒèƒŒæ™¯è‰²ï¼Œä»£ç ä¸­è®¾ç½®äº†äº¤æ›¿è¡ŒèƒŒæ™¯è®¾æœ‰æ•ˆæ—¶ç”Ÿæ•ˆ*/
+    outline:none;/*å»æ‰é€‰ä¸­æ—¶çš„è™šçº¿æ¡†*/
 }
 
 QListView::item 
 {
-    min-height:24px;/*µ÷ÕûÏî¸ß¶È*/
+    min-height:24px;/*è°ƒæ•´é¡¹é«˜åº¦*/
     margin-left:40px;
 }
 
 /*/////////////////////////////////////////////////QTableView/QTableWidget///////////////////////////////////////////*/ 
-/*QTableView¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QTableViewå…¬ç”¨å±æ€§è®¾ç½®*/
 QTableView
 {
-	border:1px solid #aaaaaa;/*±ß¿ò*/
-	background:#ffffff;/*±³¾°*/
-	selection-background-color: #73c5f1;/*Ñ¡ÖĞ±³¾°*/
-	alternate-background-color:#e9e9e9;/*½»ÌæĞĞ±³¾°É«£¬´úÂëÖĞÉèÖÃÁË½»ÌæĞĞ±³¾°ÉèÓĞĞ§Ê±ÉúĞ§*/
+	border:1px solid #aaaaaa;/*è¾¹æ¡†*/
+	background:#ffffff;/*èƒŒæ™¯*/
+	selection-background-color: #73c5f1;/*é€‰ä¸­èƒŒæ™¯*/
+	alternate-background-color:#e9e9e9;/*äº¤æ›¿è¡ŒèƒŒæ™¯è‰²ï¼Œä»£ç ä¸­è®¾ç½®äº†äº¤æ›¿è¡ŒèƒŒæ™¯è®¾æœ‰æ•ˆæ—¶ç”Ÿæ•ˆ*/
 }
 
-/*QTableViewµÄCornerButtonÇøÓòÉèÖÃ*/
+/*QTableViewçš„CornerButtonåŒºåŸŸè®¾ç½®*/
 QTableView QTableCornerButton::section
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
-    border: 1px outset #aaaaaa;/*±ß¿ò outsetÀàĞÍ±ß¿òÖ¸ÓÒµ×±ß¿ò±È×óÉÏ±ß¿òÑÕÉ«Éî£¬¿É²Î¼ûw3c border-styleÊôĞÔ*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+    border: 1px outset #aaaaaa;/*è¾¹æ¡† outsetç±»å‹è¾¹æ¡†æŒ‡å³åº•è¾¹æ¡†æ¯”å·¦ä¸Šè¾¹æ¡†é¢œè‰²æ·±ï¼Œå¯å‚è§w3c border-styleå±æ€§*/
 }
 
-/*QTableView±íÍ·ÉèÖÃ£¬ÉèÖÃ±íÍ·ËùÓĞÎ»ÖÃµÄ±³¾°£¬¶ø²»ÊÇ½ö½öÎªsection²¿·Ö£¬°üÀ¨´¹Ö±ºÍË®Æ½±íÍ·*/
+/*QTableViewè¡¨å¤´è®¾ç½®ï¼Œè®¾ç½®è¡¨å¤´æ‰€æœ‰ä½ç½®çš„èƒŒæ™¯ï¼Œè€Œä¸æ˜¯ä»…ä»…ä¸ºsectionéƒ¨åˆ†ï¼ŒåŒ…æ‹¬å‚ç›´å’Œæ°´å¹³è¡¨å¤´*/
 QTableView QHeaderView
 {
-    background: #eeeeee;/*QHeaderView±³¾°É«*/
+    background: #eeeeee;/*QHeaderViewèƒŒæ™¯è‰²*/
 }
 
-/*QTableView±íÍ·section²¿·ÖÉèÖÃ£¬°üÀ¨´¹Ö±ºÍË®Æ½±íÍ·*/
+/*QTableViewè¡¨å¤´sectionéƒ¨åˆ†è®¾ç½®ï¼ŒåŒ…æ‹¬å‚ç›´å’Œæ°´å¹³è¡¨å¤´*/
 QTableView QHeaderView::section
 {
-     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
      border: 1px outset #aaaaaa;/**/
-     padding:4px;/*µ÷Õû±íÍ·¸ß¶È*/
+     padding:4px;/*è°ƒæ•´è¡¨å¤´é«˜åº¦*/
 }
 
 QTableView::item 
 {
-    min-height:24px;/*µ÷ÕûÏî¸ß¶È*/
+    min-height:24px;/*è°ƒæ•´é¡¹é«˜åº¦*/
 }
 
 /*/////////////////////////////////////////////////QTreeView/QTreeWidget///////////////////////////////////////////*/ 
-/*QTreeView¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QTreeViewå…¬ç”¨å±æ€§è®¾ç½®*/
 QTreeView
 {
-	border:1px solid #aaaaaa;/*±ß¿ò*/
+	border:1px solid #aaaaaa;/*è¾¹æ¡†*/
 	show-decoration-selected: 1;
-    background:#ffffff;/*±³¾°*/
-	selection-background-color: #73c5f1;/*Ñ¡ÖĞ±³¾°*/
-	alternate-background-color:#e9e9e9;/*½»ÌæĞĞ±³¾°É«£¬´úÂëÖĞÉèÖÃÁË½»ÌæĞĞ±³¾°ÉèÓĞĞ§Ê±ÉúĞ§*/
+    background:#ffffff;/*èƒŒæ™¯*/
+	selection-background-color: #73c5f1;/*é€‰ä¸­èƒŒæ™¯*/
+	alternate-background-color:#e9e9e9;/*äº¤æ›¿è¡ŒèƒŒæ™¯è‰²ï¼Œä»£ç ä¸­è®¾ç½®äº†äº¤æ›¿è¡ŒèƒŒæ™¯è®¾æœ‰æ•ˆæ—¶ç”Ÿæ•ˆ*/
 }
 
-/*QTreeView±íÍ·ÉèÖÃ£¬ÉèÖÃ±íÍ·ËùÓĞÎ»ÖÃµÄ±³¾°£¬¶ø²»ÊÇ½ö½öÎªsection²¿·Ö£¬°üÀ¨´¹Ö±ºÍË®Æ½±íÍ·*/
+/*QTreeViewè¡¨å¤´è®¾ç½®ï¼Œè®¾ç½®è¡¨å¤´æ‰€æœ‰ä½ç½®çš„èƒŒæ™¯ï¼Œè€Œä¸æ˜¯ä»…ä»…ä¸ºsectionéƒ¨åˆ†ï¼ŒåŒ…æ‹¬å‚ç›´å’Œæ°´å¹³è¡¨å¤´*/
 QTreeView QHeaderView
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*QTreeView±íÍ·section²¿·ÖÉèÖÃ£¬°üÀ¨´¹Ö±ºÍË®Æ½±íÍ·*/
+/*QTreeViewè¡¨å¤´sectionéƒ¨åˆ†è®¾ç½®ï¼ŒåŒ…æ‹¬å‚ç›´å’Œæ°´å¹³è¡¨å¤´*/
 QTreeView QHeaderView::section
 {
-     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
      border: 1px outset #aaaaaa;/**/
-     padding:4px;/*µ÷Õû±íÍ·¸ß¶È*/
+     padding:4px;/*è°ƒæ•´è¡¨å¤´é«˜åº¦*/
 }
 
-/*QTreeView item×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ*/
+/*QTreeView itemå­æ§åˆ¶å™¨å±æ€§è®¾ç½®*/
 QTreeView::item 
 {
-    min-height:30px;/*µ÷ÕûÏî¸ß¶È*/
+    min-height:30px;/*è°ƒæ•´é¡¹é«˜åº¦*/
 }
 
-/*QTreeView item×Ó¿ØÖÆÆ÷ÂÓ¹ıÊ±ÊôĞÔÉèÖÃ*/
+/*QTreeView itemå­æ§åˆ¶å™¨æ è¿‡æ—¶å±æ€§è®¾ç½®*/
 QTreeView::item:hover 
 {
     background: #c5e7f9;
 }
 
-/*QTreeView item×Ó¿ØÖÆÆ÷Ñ¡ÖĞÊ±ÊôĞÔÉèÖÃ*/
+/*QTreeView itemå­æ§åˆ¶å™¨é€‰ä¸­æ—¶å±æ€§è®¾ç½®*/
 QTreeView::item:selected 
 {
     border: 0px solid #aaaaaa;
 }
 
-/*QTreeView item×Ó¿ØÖÆÆ÷Ñ¡ÖĞÇÒÓĞ½¹µã£¨´ËÊ±×ÖÌåÑÕÉ«Îª°×£©Ê±ÊôĞÔÉèÖÃ*/
+/*QTreeView itemå­æ§åˆ¶å™¨é€‰ä¸­ä¸”æœ‰ç„¦ç‚¹ï¼ˆæ­¤æ—¶å­—ä½“é¢œè‰²ä¸ºç™½ï¼‰æ—¶å±æ€§è®¾ç½®*/
 QTreeView::item:selected:active
 {
     background: #73c5f1;
 }
 
-/*QTreeView item×Ó¿ØÖÆÆ÷Ñ¡ÖĞÇÒÎŞ½¹µã£¨´ËÊ±×ÖÌåÑÕÉ«ÎªºÚ£©Ê±ÊôĞÔÉèÖÃ*/
+/*QTreeView itemå­æ§åˆ¶å™¨é€‰ä¸­ä¸”æ— ç„¦ç‚¹ï¼ˆæ­¤æ—¶å­—ä½“é¢œè‰²ä¸ºé»‘ï¼‰æ—¶å±æ€§è®¾ç½®*/
 QTreeView::item:selected:!active 
 {
     background: #73c5f1;
 }
  
-/*branchÃ»ÓĞºÏÊÊµÄËØ²Ä£¬ÔİÊ±ÏÈ²»¶¨ÖÆ
+/*branchæ²¡æœ‰åˆé€‚çš„ç´ æï¼Œæš‚æ—¶å…ˆä¸å®šåˆ¶
  QTreeView::branch {
          background: palette(base);
  }
@@ -1073,115 +1079,115 @@ QTreeView::item:selected:!active
 */
 
 /*/////////////////////////////////////////////////QMenuBar///////////////////////////////////////////*/ 
-/*²Ëµ¥À¸¹«ÓÃÊôĞÔÉèÖÃ*/
+/*èœå•æ å…¬ç”¨å±æ€§è®¾ç½®*/
 QMenuBar 
 {
 	border-bottom:1px solid #aaaaaa;
-	/*background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0.2 #dddddd, stop:1 #ffffff);½¥±ä±³¾°É«*/
+	/*background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0.2 #dddddd, stop:1 #ffffff);æ¸å˜èƒŒæ™¯è‰²*/
 	background:#f2f2f2;
 }
 
-/*²Ëµ¥À¸item×Ó¿ØÖÆÆ÷£¨²Ëµ¥Ïî£©ÊôĞÔÉèÖÃ*/
+/*èœå•æ itemå­æ§åˆ¶å™¨ï¼ˆèœå•é¡¹ï¼‰å±æ€§è®¾ç½®*/
 QMenuBar::item 
 {
-    spacing: 3px; /* ÉèÖÃ²Ëµ¥ÏîÖ®¼ä¿ÕÏ¶*/
-    padding: 2px 10px;/*Í¨¹ıpaddingÉèÖÃ²Ëµ¥ÏîÖ®¼ä¿ÕÏ¶ºÍ²Ëµ¥À¸¸ß¶È*/
-    background: transparent;/* ²Ëµ¥ÏîÄ¿±¾Éí±³¾°Í¸Ã÷*/
-    border-radius: 1px;/*²Ëµ¥ÏîµÄÔ²½Ç±ß¿ò */
+    spacing: 3px; /* è®¾ç½®èœå•é¡¹ä¹‹é—´ç©ºéš™*/
+    padding: 2px 10px;/*é€šè¿‡paddingè®¾ç½®èœå•é¡¹ä¹‹é—´ç©ºéš™å’Œèœå•æ é«˜åº¦*/
+    background: transparent;/* èœå•é¡¹ç›®æœ¬èº«èƒŒæ™¯é€æ˜*/
+    border-radius: 1px;/*èœå•é¡¹çš„åœ†è§’è¾¹æ¡† */
 }
 
-/* ²Ëµ¥À¸item×Ó¿ØÖÆÆ÷£¨²Ëµ¥Ïî£©±»Ñ¡ÖĞÊ±£¨²Ëµ¥ÖĞµÄ±»Ñ¡ÖĞ¼´Îª±»ÂÓ¹ı£¬´ËÊ±²»µ¯³ö²Ëµ¥ÏîÄ¿ÁĞ±í£© */
+/* èœå•æ itemå­æ§åˆ¶å™¨ï¼ˆèœå•é¡¹ï¼‰è¢«é€‰ä¸­æ—¶ï¼ˆèœå•ä¸­çš„è¢«é€‰ä¸­å³ä¸ºè¢«æ è¿‡ï¼Œæ­¤æ—¶ä¸å¼¹å‡ºèœå•é¡¹ç›®åˆ—è¡¨ï¼‰ */
 QMenuBar::item:selected 
 { 
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #cccccc);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #cccccc);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/* ²Ëµ¥À¸item×Ó¿ØÖÆÆ÷£¨²Ëµ¥Ïî£©±»°´Ñ¹Ê±£¨´ËÊ±µ¯³ö²Ëµ¥ÏîÄ¿ÁĞ±í£© */
+/* èœå•æ itemå­æ§åˆ¶å™¨ï¼ˆèœå•é¡¹ï¼‰è¢«æŒ‰å‹æ—¶ï¼ˆæ­¤æ—¶å¼¹å‡ºèœå•é¡¹ç›®åˆ—è¡¨ï¼‰ */
 QMenuBar::item:pressed 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dddddd, stop:0.8 #bbbbbb);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dddddd, stop:0.8 #bbbbbb);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 
 /*/////////////////////////////////////////////////QMenu///////////////////////////////////////////*/ 
-/*²Ëµ¥ÏîÄ¿ÁĞ±í(¾ÍÊÇÄÇ¸öÏÂÀ­ÁĞ±í)ÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®åˆ—è¡¨(å°±æ˜¯é‚£ä¸ªä¸‹æ‹‰åˆ—è¡¨)å±æ€§è®¾ç½®*/
 QMenu 
 {
-     background-color: white; /* ±³¾°É« */
-     border: 1px solid #aaaaaa;/* ±ß¿ò */
+     background-color: white; /* èƒŒæ™¯è‰² */
+     border: 1px solid #aaaaaa;/* è¾¹æ¡† */
  }
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íitem×Ó¿ØÖÆÆ÷£¨²Ëµ¥ÏîÄ¿ÁĞ±íÖĞ²Ëµ¥ÏîÄ¿£¬×¢Òâitem×Ó¿ØÖÆÆ÷²»°üÀ¨Í¼±íºÍÖ¸Ê¾Æ÷£¬ËùÒÔ¸Ã×Ó¿ØÖÆÆ÷Ó°ÏìµÄÖ»ÓĞ£©ÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®åˆ—è¡¨itemå­æ§åˆ¶å™¨ï¼ˆèœå•é¡¹ç›®åˆ—è¡¨ä¸­èœå•é¡¹ç›®ï¼Œæ³¨æ„itemå­æ§åˆ¶å™¨ä¸åŒ…æ‹¬å›¾è¡¨å’ŒæŒ‡ç¤ºå™¨ï¼Œæ‰€ä»¥è¯¥å­æ§åˆ¶å™¨å½±å“çš„åªæœ‰ï¼‰å±æ€§è®¾ç½®*/
 QMenu::item 
 {
-     background-color: transparent;/*±³¾°É«Í¸Ã÷*/
-     padding:4px 26px 4px 26px;/*Í¨¹ı²Ëµ¥ÏîÄ¿paddingÊôĞÔµ÷Õû²Ëµ¥ÏîÄ¿ÖĞÎÄ×ÖÎ»ÖÃ*/
+     background-color: transparent;/*èƒŒæ™¯è‰²é€æ˜*/
+     padding:4px 26px 4px 26px;/*é€šè¿‡èœå•é¡¹ç›®paddingå±æ€§è°ƒæ•´èœå•é¡¹ç›®ä¸­æ–‡å­—ä½ç½®*/
  }
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íitem×Ó¿ØÖÆÆ÷±»Ñ¡ÖĞ£¨²Ëµ¥ÖĞµÄ±»Ñ¡ÖĞ¼´Îª±»ÂÓ¹ı£©Ê±ÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®åˆ—è¡¨itemå­æ§åˆ¶å™¨è¢«é€‰ä¸­ï¼ˆèœå•ä¸­çš„è¢«é€‰ä¸­å³ä¸ºè¢«æ è¿‡ï¼‰æ—¶å±æ€§è®¾ç½®*/
 QMenu::item:selected 
 {
-    background-color: #73c5f1;/*ÉèÖÃ±³¾°É«*/
+    background-color: #73c5f1;/*è®¾ç½®èƒŒæ™¯è‰²*/
 }
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íseparator×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ£¬¼´¶Ô²Ëµ¥ÏîÄ¿ÁĞ±íÖĞµÄ·Ö¸ôÌõÉèÖÃ*/
+/*èœå•é¡¹ç›®åˆ—è¡¨separatorå­æ§åˆ¶å™¨å±æ€§è®¾ç½®ï¼Œå³å¯¹èœå•é¡¹ç›®åˆ—è¡¨ä¸­çš„åˆ†éš”æ¡è®¾ç½®*/
 QMenu::separator 
 {
    height: 1px;
    background: #AAAAAA;
-   margin-left: 25px;/*×óÓÒÁô¿Õ*/
+   margin-left: 25px;/*å·¦å³ç•™ç©º*/
    margin-right: 5px;
 }
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íright-arrow×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ£¬¼´¶Ô²Ëµ¥ÏîÄ¿ÁĞ±íÖĞµÄ¶ş¼¶²Ëµ¥µÄ¼ıÍ·ÉèÖÃ*/
+/*èœå•é¡¹ç›®åˆ—è¡¨right-arrowå­æ§åˆ¶å™¨å±æ€§è®¾ç½®ï¼Œå³å¯¹èœå•é¡¹ç›®åˆ—è¡¨ä¸­çš„äºŒçº§èœå•çš„ç®­å¤´è®¾ç½®*/
 QMenu::right-arrow 
 {
-	right:5px;/*µ÷Õû¼ıÍ·Î»ÖÃ*/
-    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*¼ıÍ·Í¼Ïñ*/
+	right:5px;/*è°ƒæ•´ç®­å¤´ä½ç½®*/
+    image:url(:/qss/icon/hor_scroll_right_arrow.png);/*ç®­å¤´å›¾åƒ*/
 }
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íicon×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ£¬¼´¶Ô²Ëµ¥ÏîÄ¿ÖĞÍ¼±êµÄÉèÖÃ£¬µ«ºÃÏñºÜ¶àÊôĞÔ¶¼²»Æğ×÷ÓÃÈç±ß¿ò¡¢±³¾°¡¢´óĞ¡µÈ£¬ºÎ½â£¿*/
+/*èœå•é¡¹ç›®åˆ—è¡¨iconå­æ§åˆ¶å™¨å±æ€§è®¾ç½®ï¼Œå³å¯¹èœå•é¡¹ç›®ä¸­å›¾æ ‡çš„è®¾ç½®ï¼Œä½†å¥½åƒå¾ˆå¤šå±æ€§éƒ½ä¸èµ·ä½œç”¨å¦‚è¾¹æ¡†ã€èƒŒæ™¯ã€å¤§å°ç­‰ï¼Œä½•è§£ï¼Ÿ*/
 QMenu::icon 
 { 
-	position:relative;/*positionÖ¸Ê¾£ºµ÷ÕûsubcontrolÎ»ÖÃµÄÊôĞÔtop left bottom rightÉèÖÃ¾àÀëÎªÏà¶Ôsubcontrol×ÔÉí£¨relative£©»¹ÊÇÏà¶Ô¸¸¿Ø¼ş£¨absolut£©¡£Ä¬ÈÏÎªrelative*/
-	left: 5px;/*µ÷ÕûÍ¼±íÎ»ÖÃ*/
+	position:relative;/*positionæŒ‡ç¤ºï¼šè°ƒæ•´subcontrolä½ç½®çš„å±æ€§top left bottom rightè®¾ç½®è·ç¦»ä¸ºç›¸å¯¹subcontrolè‡ªèº«ï¼ˆrelativeï¼‰è¿˜æ˜¯ç›¸å¯¹çˆ¶æ§ä»¶ï¼ˆabsolutï¼‰ã€‚é»˜è®¤ä¸ºrelative*/
+	left: 5px;/*è°ƒæ•´å›¾è¡¨ä½ç½®*/
 }
 
 
-/*²Ëµ¥ÏîÄ¿ÁĞ±íindicator×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ£¬¼´¶Ô²Ëµ¥ÏîÄ¿ÖĞÖ¸Ê¾Æ÷£¨°üÀ¨checkable menu itemÇ°ÃæµÄ¸´Ñ¡¿ò¡¢
-exclusive checkable menu itemÇ°ÃæµÄÄÇ¸öµ¥Ñ¡¿ò£©µÄÉèÖÃ£¬µ«ºÃÏñºÜ¶àÊôĞÔ¶¼²»Æğ×÷ÓÃÈç±ß¿ò¡¢±³¾°¡¢´óĞ¡µÈ£¬ºÎ½â£¿*/
+/*èœå•é¡¹ç›®åˆ—è¡¨indicatorå­æ§åˆ¶å™¨å±æ€§è®¾ç½®ï¼Œå³å¯¹èœå•é¡¹ç›®ä¸­æŒ‡ç¤ºå™¨ï¼ˆåŒ…æ‹¬checkable menu itemå‰é¢çš„å¤é€‰æ¡†ã€
+exclusive checkable menu itemå‰é¢çš„é‚£ä¸ªå•é€‰æ¡†ï¼‰çš„è®¾ç½®ï¼Œä½†å¥½åƒå¾ˆå¤šå±æ€§éƒ½ä¸èµ·ä½œç”¨å¦‚è¾¹æ¡†ã€èƒŒæ™¯ã€å¤§å°ç­‰ï¼Œä½•è§£ï¼Ÿ*/
 QMenu::indicator 
 {
-	position:relative;/*positionÖ¸Ê¾£ºµ÷ÕûsubcontrolÎ»ÖÃµÄÊôĞÔtop left bottom rightÉèÖÃ¾àÀëÎªÏà¶Ôsubcontrol×ÔÉí£¨relative£©»¹ÊÇÏà¶Ô¸¸¿Ø¼ş£¨absolut£©¡£Ä¬ÈÏÎªrelative*/
-	left: 5px;/*µ÷ÕûÖ¸Ê¾Æ÷Î»ÖÃ*/
+	position:relative;/*positionæŒ‡ç¤ºï¼šè°ƒæ•´subcontrolä½ç½®çš„å±æ€§top left bottom rightè®¾ç½®è·ç¦»ä¸ºç›¸å¯¹subcontrolè‡ªèº«ï¼ˆrelativeï¼‰è¿˜æ˜¯ç›¸å¯¹çˆ¶æ§ä»¶ï¼ˆabsolutï¼‰ã€‚é»˜è®¤ä¸ºrelative*/
+	left: 5px;/*è°ƒæ•´æŒ‡ç¤ºå™¨ä½ç½®*/
 }
 
-/*²Ëµ¥ÏîÄ¿·ÇÅÅËûÖ¸Ê¾Æ÷¼´¸´Ñ¡¿òÎªÑ¡ÖĞÊ±µÄÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®éæ’ä»–æŒ‡ç¤ºå™¨å³å¤é€‰æ¡†ä¸ºé€‰ä¸­æ—¶çš„å±æ€§è®¾ç½®*/
 QMenu::indicator:non-exclusive:unchecked 
 {
     image: url(:/qss/icon/checkbox.png);
 }
 
-/*²Ëµ¥ÏîÄ¿·ÇÅÅËûÖ¸Ê¾Æ÷¼´¸´Ñ¡¿òÎªÑ¡ÖĞ±»ÂÓ¹ıÊ±µÄÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®éæ’ä»–æŒ‡ç¤ºå™¨å³å¤é€‰æ¡†ä¸ºé€‰ä¸­è¢«æ è¿‡æ—¶çš„å±æ€§è®¾ç½®*/
 QMenu::indicator:non-exclusive:unchecked:selected 
 {
     image: url(:/qss/icon/checkbox_h.png);
 }
 
-/*²Ëµ¥ÏîÄ¿·ÇÅÅËûÖ¸Ê¾Æ÷¼´¸´Ñ¡¿òÎªÑ¡ÖĞÊ±µÄÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®éæ’ä»–æŒ‡ç¤ºå™¨å³å¤é€‰æ¡†ä¸ºé€‰ä¸­æ—¶çš„å±æ€§è®¾ç½®*/
 QMenu::indicator:non-exclusive:checked 
 {
     image: url(:/qss/icon/checkbox_p.png);
 }
 
-/*²Ëµ¥ÏîÄ¿·ÇÅÅËûÖ¸Ê¾Æ÷¼´¸´Ñ¡¿òÎªÑ¡ÖĞ±»ÂÓ¹ıÊ±µÄÊôĞÔÉèÖÃ*/
+/*èœå•é¡¹ç›®éæ’ä»–æŒ‡ç¤ºå™¨å³å¤é€‰æ¡†ä¸ºé€‰ä¸­è¢«æ è¿‡æ—¶çš„å±æ€§è®¾ç½®*/
 QMenu::indicator:non-exclusive:checked:selected 
 {
     image: url(:/qss/icon/checkbox_p.png);
 }
  
  
-/* ²Ëµ¥ÏîÄ¿ÅÅËûÖ¸Ê¾Æ÷ÊôĞÔÉèÖÃ£¬´óÍ¬Ğ¡Òì */
+/* èœå•é¡¹ç›®æ’ä»–æŒ‡ç¤ºå™¨å±æ€§è®¾ç½®ï¼Œå¤§åŒå°å¼‚ */
 QMenu::indicator:exclusive:unchecked 
 {
     image: url(:/qss/icon/radio.png);
@@ -1204,129 +1210,129 @@ QMenu::indicator:exclusive:checked:selected
 
 
 /*/////////////////////////////////////////////////QToolButton///////////////////////////////////////////*/ 
-/*QToolButton:¹¤¾ßÀ¸ÉÏ°´Å¥»òµ¥¶ÀµÄ¹¤¾ß°´Å¥£¨µ¥¶À¹¤¾ß°´Å¥¿Éµ¯³öpopupmenu£©*/
+/*QToolButton:å·¥å…·æ ä¸ŠæŒ‰é’®æˆ–å•ç‹¬çš„å·¥å…·æŒ‰é’®ï¼ˆå•ç‹¬å·¥å…·æŒ‰é’®å¯å¼¹å‡ºpopupmenuï¼‰*/
 /**/
-/*QToolButton¹«ÓÃÊôĞÔÉèÖÃ*/
+/*QToolButtonå…¬ç”¨å±æ€§è®¾ç½®*/
 QToolButton 
 { 
-	min-height:20px;/*×îĞ¡¿í¶È*/
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
-    border-radius: 4px;/*QToolButtonÓëQPushButton»ù±¾Ò»ÖÂ£¬µ«ÕâÀïÉèÖÃµÄ±ß¿òÔ²½Ç²»Ò»ÖÂ*/
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
-	outline:none;/*±íÊ¾foucs×´Ì¬Ê±È¡ÏûĞéÏß¿ò*/
+	min-height:20px;/*æœ€å°å®½åº¦*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    border-radius: 4px;/*QToolButtonä¸QPushButtonåŸºæœ¬ä¸€è‡´ï¼Œä½†è¿™é‡Œè®¾ç½®çš„è¾¹æ¡†åœ†è§’ä¸ä¸€è‡´*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	outline:none;/*è¡¨ç¤ºfoucsçŠ¶æ€æ—¶å–æ¶ˆè™šçº¿æ¡†*/
 }
 
-/*QToolButtonÀàĞÍÎªDelayPopupÊ±Îªmenu-indicator×Ó¿ØÖÆÆ÷Áô³ö¿Õ¼ä
-DelayPopup±íÊ¾³ÖĞø°´Ñ¹°´Å¥¿Éµ¯³ö²Ëµ¥*/
+/*QToolButtonç±»å‹ä¸ºDelayPopupæ—¶ä¸ºmenu-indicatorå­æ§åˆ¶å™¨ç•™å‡ºç©ºé—´
+DelayPopupè¡¨ç¤ºæŒç»­æŒ‰å‹æŒ‰é’®å¯å¼¹å‡ºèœå•*/
 QToolButton[popupMode="0"] 
 { 
-    padding-right: 4px; /*ÓÃpaddingÁô³ö¿Õ¼ä£¬³õÊ¼subcontrol-originÊôĞÔÒªÎªpadding*/
+    padding-right: 4px; /*ç”¨paddingç•™å‡ºç©ºé—´ï¼Œåˆå§‹subcontrol-originå±æ€§è¦ä¸ºpadding*/
 }
 
-/*QToolButtonÀàĞÍÎªMenuButtonPopupÊ±Îªmenu-button×Ó¿ØÖÆÆ÷Áô³ö¿Õ¼ä
-MenuButtonPopup±íÊ¾µã»÷menu-button×Ó¿ØÖÆÆ÷¿Éµ¯³ö²Ëµ¥*/
+/*QToolButtonç±»å‹ä¸ºMenuButtonPopupæ—¶ä¸ºmenu-buttonå­æ§åˆ¶å™¨ç•™å‡ºç©ºé—´
+MenuButtonPopupè¡¨ç¤ºç‚¹å‡»menu-buttonå­æ§åˆ¶å™¨å¯å¼¹å‡ºèœå•*/
 QToolButton[popupMode="1"] 
 { 
-    padding-right: 18px; /*ÓÃpaddingÁô³ö¿Õ¼ä£¬³õÊ¼subcontrol-originÊôĞÔÒªÎªpadding*/
+    padding-right: 18px; /*ç”¨paddingç•™å‡ºç©ºé—´ï¼Œåˆå§‹subcontrol-originå±æ€§è¦ä¸ºpadding*/
 }
 
-/*QToolButtonÀàĞÍÎªInstantPopupÊ±Îªmenu-indicator×Ó¿ØÖÆÆ÷Áô³ö¿Õ¼ä
-MenuButtonPopup±íÊ¾µã»÷QToolButton¼´¿ÉÁ¢¼´µ¯³ö²Ëµ¥£¬Instant±íÊ¾Á¢¼´ÒâË¼*/
+/*QToolButtonç±»å‹ä¸ºInstantPopupæ—¶ä¸ºmenu-indicatorå­æ§åˆ¶å™¨ç•™å‡ºç©ºé—´
+MenuButtonPopupè¡¨ç¤ºç‚¹å‡»QToolButtonå³å¯ç«‹å³å¼¹å‡ºèœå•ï¼ŒInstantè¡¨ç¤ºç«‹å³æ„æ€*/
 QToolButton[popupMode="2"] 
 { 
-    padding-right: 4px;/*ÓÃpaddingÁô³ö¿Õ¼ä£¬³õÊ¼subcontrol-originÊôĞÔÒªÎªpadding*/
+    padding-right: 4px;/*ç”¨paddingç•™å‡ºç©ºé—´ï¼Œåˆå§‹subcontrol-originå±æ€§è¦ä¸ºpadding*/
 }
 
-/*QToolButton pressedÎ±×´Ì¬Ê±ÊôĞÔÉèÖÃ£¬×¢ÒâhoverÎ±×´Ì¬ÉèÖÃÒ»¶¨ÒªÔÚpressedÎ±×´Ì¬Ö®Ç°£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡*/
+/*QToolButton pressedä¼ªçŠ¶æ€æ—¶å±æ€§è®¾ç½®ï¼Œæ³¨æ„hoverä¼ªçŠ¶æ€è®¾ç½®ä¸€å®šè¦åœ¨pressedä¼ªçŠ¶æ€ä¹‹å‰ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼*/
 QToolButton:hover  
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*QToolButton pressedÎ±×´Ì¬Ê±ÊôĞÔÉèÖÃ£¬×¢ÒâhoverÎ±×´Ì¬ÉèÖÃÒ»¶¨ÒªÔÚpressedÎ±×´Ì¬Ö®Ç°£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡*/
+/*QToolButton pressedä¼ªçŠ¶æ€æ—¶å±æ€§è®¾ç½®ï¼Œæ³¨æ„hoverä¼ªçŠ¶æ€è®¾ç½®ä¸€å®šè¦åœ¨pressedä¼ªçŠ¶æ€ä¹‹å‰ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼*/
 QToolButton:pressed  
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
-/*QToolButton menu-button×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ
-menu-button×Ó¿ØÖÆÆ÷½ö¶ÔMenuButtonPopupÀàĞÍQToolButtonÉúĞ§*/
+/*QToolButton menu-buttonå­æ§åˆ¶å™¨å±æ€§è®¾ç½®
+menu-buttonå­æ§åˆ¶å™¨ä»…å¯¹MenuButtonPopupç±»å‹QToolButtonç”Ÿæ•ˆ*/
 QToolButton::menu-button 
 {
-    border-left: 1px solid #aaaaaa;/*ÉèÖÃ×ó±ß±ß¿ò¼´¿É*/
-    border-top-right-radius: 4px;/*ÉèÖÃÓÒÉÏ±ß¿òÔ²½Ç£¬ÓëQToolButton×ÔÉíÔ²½Ç±£³ÖÒ»ÖÂ*/
-    border-bottom-right-radius: 4px;/*ÉèÖÃÓÒĞ¡±ß¿òÔ²½Ç£¬ÓëQToolButton×ÔÉíÔ²½Ç±£³ÖÒ»ÖÂ*/
-    width: 16px;/*ÉèÖÃmenu-button¿í¶È£¬×¢ÒâÓëQToolButtonµÄpadding-rightÊôĞÔÖµÆ¥Åä*/
+    border-left: 1px solid #aaaaaa;/*è®¾ç½®å·¦è¾¹è¾¹æ¡†å³å¯*/
+    border-top-right-radius: 4px;/*è®¾ç½®å³ä¸Šè¾¹æ¡†åœ†è§’ï¼Œä¸QToolButtonè‡ªèº«åœ†è§’ä¿æŒä¸€è‡´*/
+    border-bottom-right-radius: 4px;/*è®¾ç½®å³å°è¾¹æ¡†åœ†è§’ï¼Œä¸QToolButtonè‡ªèº«åœ†è§’ä¿æŒä¸€è‡´*/
+    width: 16px;/*è®¾ç½®menu-buttonå®½åº¦ï¼Œæ³¨æ„ä¸QToolButtonçš„padding-rightå±æ€§å€¼åŒ¹é…*/
 }
 
-/*QToolButton menu-arrow×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ
-menu-arrow×Ó¿ØÖÆÆ÷½ö¶ÔMenuButtonPopupÀàĞÍQToolButtonÉúĞ§£¬ËüÎªmenu-button¼ıÍ·*/
+/*QToolButton menu-arrowå­æ§åˆ¶å™¨å±æ€§è®¾ç½®
+menu-arrowå­æ§åˆ¶å™¨ä»…å¯¹MenuButtonPopupç±»å‹QToolButtonç”Ÿæ•ˆï¼Œå®ƒä¸ºmenu-buttonç®­å¤´*/
 QToolButton::menu-arrow 
 {
-	position:relative;/*positionÖ¸Ê¾£ºµ÷ÕûsubcontrolÎ»ÖÃµÄÊôĞÔtop left bottom rightÉèÖÃ¾àÀëÎªÏà¶Ôsubcontrol×ÔÉí£¨relative£©»¹ÊÇÏà¶Ô¸¸¿Ø¼ş£¨absolut£©¡£Ä¬ÈÏÎªrelative*/
-	top: 1px; /*¶¥²¿Ïà¶ÔÆ«ÒÆ1px,µ÷Õûmenu-arrowÏà¶Ô¸¸¿Ø¼şÎ»ÖÃ*/
-    right: 1px; /*ÓÒ±ßÏà¶ÔÆ«ÒÆ1px,µ÷Õûmenu-arrowÏà¶Ô¸¸¿Ø¼şÎ»ÖÃ*/
-    image:url(:/qss/icon/ver_scroll_bottom_arrow.png);/*¼ıÍ·Í¼Æ¬*/
+	position:relative;/*positionæŒ‡ç¤ºï¼šè°ƒæ•´subcontrolä½ç½®çš„å±æ€§top left bottom rightè®¾ç½®è·ç¦»ä¸ºç›¸å¯¹subcontrolè‡ªèº«ï¼ˆrelativeï¼‰è¿˜æ˜¯ç›¸å¯¹çˆ¶æ§ä»¶ï¼ˆabsolutï¼‰ã€‚é»˜è®¤ä¸ºrelative*/
+	top: 1px; /*é¡¶éƒ¨ç›¸å¯¹åç§»1px,è°ƒæ•´menu-arrowç›¸å¯¹çˆ¶æ§ä»¶ä½ç½®*/
+    right: 1px; /*å³è¾¹ç›¸å¯¹åç§»1px,è°ƒæ•´menu-arrowç›¸å¯¹çˆ¶æ§ä»¶ä½ç½®*/
+    image:url(:/qss/icon/ver_scroll_bottom_arrow.png);/*ç®­å¤´å›¾ç‰‡*/
 }
 
-/*QToolButton menu-arrow×Ó¿ØÖÆÆ÷ÔÚ²Ëµ¥Õ¹¿ªÊ½µÄÊôĞÔÉèÖÃ
-menu-arrow×Ó¿ØÖÆÆ÷½ö¶ÔMenuButtonPopupÀàĞÍQToolButtonÉúĞ§£¬ËüÎªmenu-button¼ıÍ·*/
+/*QToolButton menu-arrowå­æ§åˆ¶å™¨åœ¨èœå•å±•å¼€å¼çš„å±æ€§è®¾ç½®
+menu-arrowå­æ§åˆ¶å™¨ä»…å¯¹MenuButtonPopupç±»å‹QToolButtonç”Ÿæ•ˆï¼Œå®ƒä¸ºmenu-buttonç®­å¤´*/
 QToolButton::menu-arrow:open 
 {
-    top: 2px; /*¶¥²¿Æ«ÒÆ1px,ÈÃ¼ıÍ·ÓĞÏÂ³ÁĞ§¹û*/
+    top: 2px; /*é¡¶éƒ¨åç§»1px,è®©ç®­å¤´æœ‰ä¸‹æ²‰æ•ˆæœ*/
 }
 
-/*QToolButton menu-indicator×Ó¿ØÖÆÆ÷ÊôĞÔÉèÖÃ
-menu-indicator×Ó¿ØÖÆÆ÷½ö¶ÔMenuButtonPopupºÍInstantPopupÀàĞÍQToolButtonÉúĞ§£¬Ëü±íÊ¾°´Å¥ÓµÓĞ²Ëµ¥µÄÖ¸Ê¾*/
+/*QToolButton menu-indicatorå­æ§åˆ¶å™¨å±æ€§è®¾ç½®
+menu-indicatorå­æ§åˆ¶å™¨ä»…å¯¹MenuButtonPopupå’ŒInstantPopupç±»å‹QToolButtonç”Ÿæ•ˆï¼Œå®ƒè¡¨ç¤ºæŒ‰é’®æ‹¥æœ‰èœå•çš„æŒ‡ç¤º*/
 QToolButton::menu-indicator 
 { 
-      image:url(:/qss/icon/ver_scroll_bottom_arrow.png);/*¼ıÍ·Í¼Æ¬*/
-      width:7px;/*menu-indicator¿í¶È*/
-      height:7px;/*menu-indicator¸ß¶È*/
-      padding:0px 2px;/*µ÷Õûmenu-indicatorÎ»ÖÃ*/
+      image:url(:/qss/icon/ver_scroll_bottom_arrow.png);/*ç®­å¤´å›¾ç‰‡*/
+      width:7px;/*menu-indicatorå®½åº¦*/
+      height:7px;/*menu-indicatoré«˜åº¦*/
+      padding:0px 2px;/*è°ƒæ•´menu-indicatorä½ç½®*/
 }
  
 /*/////////////////////////////////////////////////QToolBar///////////////////////////////////////////*/ 
-/*QToolBar¹«ÓÃÊôĞÔÉèÖÃ*/   
+/*QToolBarå…¬ç”¨å±æ€§è®¾ç½®*/   
 QToolBar 
 {
-	spacing:2px;/*µ÷Õû¹¤¾ßÀ¸°´Å¥¼ä¾àÀë*/
-	background:#f2f2f2;/*ÉèÖÃ±³¾°É«ÓëÖ÷´°¿Ú±³¾°Ò»ÖÂ£¬ÕâÑùÔÚÍÏ¶¯Ê±¾Í²»»áÂ¶³öÔ­À´±³¾°É«*/   
+	spacing:2px;/*è°ƒæ•´å·¥å…·æ æŒ‰é’®é—´è·ç¦»*/
+	background:#f2f2f2;/*è®¾ç½®èƒŒæ™¯è‰²ä¸ä¸»çª—å£èƒŒæ™¯ä¸€è‡´ï¼Œè¿™æ ·åœ¨æ‹–åŠ¨æ—¶å°±ä¸ä¼šéœ²å‡ºåŸæ¥èƒŒæ™¯è‰²*/   
 }
 
-/*QToolBar handle×Ó¿ØÖÆÆ÷£¨¾ÍÊÇÄÇ¸ö¹¤¾ßÀ¸ÍÏ¶¯°´Å¥£©ÊôĞÔÉèÖÃ */  
+/*QToolBar handleå­æ§åˆ¶å™¨ï¼ˆå°±æ˜¯é‚£ä¸ªå·¥å…·æ æ‹–åŠ¨æŒ‰é’®ï¼‰å±æ€§è®¾ç½® */  
 QToolBar::handle 
 {
-    /*±£´æÄ¬ÈÏ¼´¿É*/
+    /*ä¿å­˜é»˜è®¤å³å¯*/
 }
 
-/*QToolBar separator×Ó¿ØÖÆÆ÷£¨¾ÍÊÇ¹¤¾ßÀ¸Ö®¼ä·ç¸ñÌõ£©ÊôĞÔÉèÖÃ */  
+/*QToolBar separatorå­æ§åˆ¶å™¨ï¼ˆå°±æ˜¯å·¥å…·æ ä¹‹é—´é£æ ¼æ¡ï¼‰å±æ€§è®¾ç½® */  
 QToolBar::separator 
 {
-    /*±£´æÄ¬ÈÏ¼´¿É*/
+    /*ä¿å­˜é»˜è®¤å³å¯*/
 }
 
-/*ÓÉÓÚQToolButtonµÄÊôĞÔ¶ÔQToolBarÉÏbuttonÊôĞÔµÄÓ°Ïì²»ÖªµÀÔõÃ´·ÖÀë£¬
-ËùÒÔQToolBarÉÏ°´Å¥Ğ§¹ûÒªÍêÈ«×Ô¼º¶¨ÖÆ£¬ÆäÊµqt±¾ÉíÊµÏÖµÄXPÏµÍ³ÉÏ²£Á§¸²¸ÇĞ§¹û²»´í*/
-/*QToolBarÉÏ°´Å¥ÊôĞÔÉèÖÃ*/
+/*ç”±äºQToolButtonçš„å±æ€§å¯¹QToolBarä¸Šbuttonå±æ€§çš„å½±å“ä¸çŸ¥é“æ€ä¹ˆåˆ†ç¦»ï¼Œ
+æ‰€ä»¥QToolBarä¸ŠæŒ‰é’®æ•ˆæœè¦å®Œå…¨è‡ªå·±å®šåˆ¶ï¼Œå…¶å®qtæœ¬èº«å®ç°çš„XPç³»ç»Ÿä¸Šç»ç’ƒè¦†ç›–æ•ˆæœä¸é”™*/
+/*QToolBarä¸ŠæŒ‰é’®å±æ€§è®¾ç½®*/
 QToolBar QToolButton
 {
-	margin-bottom:2px;/*µ÷Õû°´Å¥´óĞ¡£¬·ÀÖ¹QToolButton hoverÊ±ÕÚ×¡QToolBar×ÔÉí±ß¿ò*/
-	border: none;/*È¥µô±ß¿ò*/
-	background:transparent;/*ÉèÖÃnormal×´Ì¬ÏÂ±³¾°É«ÎªÍ¸Ã÷É«*/
-	border-radius: 4px;/*±ß¿òÔ²½Ç*/
+	margin-bottom:2px;/*è°ƒæ•´æŒ‰é’®å¤§å°ï¼Œé˜²æ­¢QToolButton hoveræ—¶é®ä½QToolBarè‡ªèº«è¾¹æ¡†*/
+	border: none;/*å»æ‰è¾¹æ¡†*/
+	background:transparent;/*è®¾ç½®normalçŠ¶æ€ä¸‹èƒŒæ™¯è‰²ä¸ºé€æ˜è‰²*/
+	border-radius: 4px;/*è¾¹æ¡†åœ†è§’*/
 }
 
 /*/////////////////////////////////////////////////QToolTip///////////////////////////////////////////*/ 
-/*QToolTip(ÌáÊ¾Ìõ)¹«ÓÃÊôĞÔÉèÖÃ*/   
+/*QToolTip(æç¤ºæ¡)å…¬ç”¨å±æ€§è®¾ç½®*/   
 QToolTip 
 {
 	/*background:#f4f4f4;*/
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
-    padding: 1px;/*µ÷Õû´óĞ¡*/
-    border-radius: 0px;/*±ß¿òÔ²½Ç*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+    padding: 1px;/*è°ƒæ•´å¤§å°*/
+    border-radius: 0px;/*è¾¹æ¡†åœ†è§’*/
     background:#fafafa;
-    opacity: 240;/*²»Í¸Ã÷¶È£¬255Ê±²»Í¸Ã÷*/
+    opacity: 240;/*ä¸é€æ˜åº¦ï¼Œ255æ—¶ä¸é€æ˜*/
 }
 
 /*/////////////////////////////////////////////////QSpinBox///////////////////////////////////////////*/ 
@@ -1334,8 +1340,8 @@ QSpinBox
 {
 	min-height:20px;
     padding-right: 15px; 
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
- 	min-width:1em;/*×îĞ¡¿í¶ÈÎª6em emºÍpxÒ»ÑùÎª³¤¶Èµ¥Î»¡£em±íÊ¾¶ÔÓ¦×ÖÌåMµÄ¿í¶È¡£MÎª´óĞ´×ÖÄ¸µÄ×î´ó¿í¶È*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+ 	min-width:1em;/*æœ€å°å®½åº¦ä¸º6em emå’Œpxä¸€æ ·ä¸ºé•¿åº¦å•ä½ã€‚emè¡¨ç¤ºå¯¹åº”å­—ä½“Mçš„å®½åº¦ã€‚Mä¸ºå¤§å†™å­—æ¯çš„æœ€å¤§å®½åº¦*/
      background:white;
 }
 
@@ -1343,7 +1349,7 @@ QSpinBox::up-button
 {
     subcontrol-origin: padding;
     subcontrol-position: top right; 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-bottom: 0px solid #aaaaaa;
@@ -1351,12 +1357,12 @@ QSpinBox::up-button
 
 QSpinBox::up-button:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QSpinBox::up-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QSpinBox::up-arrow 
@@ -1368,15 +1374,15 @@ QSpinBox::up-arrow
 
 QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 0px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 0px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 QSpinBox::down-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: bottom right; 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-top: 0px solid #aaaaaa;
@@ -1384,12 +1390,12 @@ QSpinBox::down-button
 
 QSpinBox::down-button:hover 
 {
-    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QSpinBox::down-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QSpinBox::down-arrow 
@@ -1402,8 +1408,8 @@ QSpinBox::down-arrow
 QSpinBox::down-arrow:disabled,
 QSpinBox::down-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 0px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 0px solid #dddddd;/*è¾¹æ¡†*/
 }
  
  
@@ -1412,15 +1418,15 @@ QDoubleSpinBox
 {
 	min-height:20px;
     padding-right: 15px; 
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
- 	min-width:4em;/*×îĞ¡¿í¶ÈÎª6em emºÍpxÒ»ÑùÎª³¤¶Èµ¥Î»¡£em±íÊ¾¶ÔÓ¦×ÖÌåMµÄ¿í¶È¡£MÎª´óĞ´×ÖÄ¸µÄ×î´ó¿í¶È*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+ 	min-width:4em;/*æœ€å°å®½åº¦ä¸º6em emå’Œpxä¸€æ ·ä¸ºé•¿åº¦å•ä½ã€‚emè¡¨ç¤ºå¯¹åº”å­—ä½“Mçš„å®½åº¦ã€‚Mä¸ºå¤§å†™å­—æ¯çš„æœ€å¤§å®½åº¦*/
 }
 
 QDoubleSpinBox::up-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: top right; /* position at the top right corner */
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-bottom: 0px solid #aaaaaa;
@@ -1428,12 +1434,12 @@ QDoubleSpinBox::up-button
 
 QDoubleSpinBox::up-button:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDoubleSpinBox::up-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDoubleSpinBox::up-arrow 
@@ -1446,15 +1452,15 @@ QDoubleSpinBox::up-arrow
 QDoubleSpinBox::up-arrow:disabled, 
 QSpinBox::up-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 QDoubleSpinBox::down-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: bottom right; 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-top: 0px solid #aaaaaa;
@@ -1462,12 +1468,12 @@ QDoubleSpinBox::down-button
 
 QDoubleSpinBox::down-button:hover 
 {
-    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDoubleSpinBox::down-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDoubleSpinBox::down-arrow {
@@ -1479,8 +1485,8 @@ QDoubleSpinBox::down-arrow {
 QDoubleSpinBox::down-arrow:disabled,
 QDoubleSpinBox::down-arrow:off 
 { 
-	 background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	 background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 /*/////////////////////////////////////////////////QTimeEdit///////////////////////////////////////////*/ 
@@ -1488,15 +1494,15 @@ QTimeEdit
 {
 	min-height:20px;
     padding-right: 15px; 
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
- 	min-width:8em;/*×îĞ¡¿í¶ÈÎª6em emºÍpxÒ»ÑùÎª³¤¶Èµ¥Î»¡£em±íÊ¾¶ÔÓ¦×ÖÌåMµÄ¿í¶È¡£MÎª´óĞ´×ÖÄ¸µÄ×î´ó¿í¶È*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+ 	min-width:8em;/*æœ€å°å®½åº¦ä¸º6em emå’Œpxä¸€æ ·ä¸ºé•¿åº¦å•ä½ã€‚emè¡¨ç¤ºå¯¹åº”å­—ä½“Mçš„å®½åº¦ã€‚Mä¸ºå¤§å†™å­—æ¯çš„æœ€å¤§å®½åº¦*/
 }
 
 QTimeEdit::up-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: top right; /* position at the top right corner */
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-bottom: 0px solid #aaaaaa;
@@ -1504,12 +1510,12 @@ QTimeEdit::up-button
 
 QTimeEdit::up-button:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QTimeEdit::up-button:pressed 
 {
-   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QTimeEdit::up-arrow 
@@ -1522,15 +1528,15 @@ QTimeEdit::up-arrow
 QTimeEdit::up-arrow:disabled, 
 QTimeEdit::up-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 QTimeEdit::down-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: bottom right; 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-top: 0px solid #aaaaaa;
@@ -1538,12 +1544,12 @@ QTimeEdit::down-button
 
 QTimeEdit::down-button:hover 
 {
-    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QTimeEdit::down-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QTimeEdit::down-arrow 
@@ -1556,8 +1562,8 @@ QTimeEdit::down-arrow
 QTimeEdit::down-arrow:disabled,
 QTimeEdit::down-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 
@@ -1566,15 +1572,15 @@ QDateEdit
 {
 	min-height:20px;
     padding-right: 15px; 
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
- 	min-width:10em;/*×îĞ¡¿í¶ÈÎª6em emºÍpxÒ»ÑùÎª³¤¶Èµ¥Î»¡£em±íÊ¾¶ÔÓ¦×ÖÌåMµÄ¿í¶È¡£MÎª´óĞ´×ÖÄ¸µÄ×î´ó¿í¶È*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
+ 	min-width:10em;/*æœ€å°å®½åº¦ä¸º6em emå’Œpxä¸€æ ·ä¸ºé•¿åº¦å•ä½ã€‚emè¡¨ç¤ºå¯¹åº”å­—ä½“Mçš„å®½åº¦ã€‚Mä¸ºå¤§å†™å­—æ¯çš„æœ€å¤§å®½åº¦*/
 }
 
 QDateEdit::up-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: top right; /* position at the top right corner */
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-bottom: 0px solid #aaaaaa;
@@ -1582,12 +1588,12 @@ QDateEdit::up-button
 
 QDateEdit::up-button:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateEdit::up-button:pressed 
 {
-   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateEdit::up-arrow 
@@ -1600,15 +1606,15 @@ QDateEdit::up-arrow
 QDateEdit::up-arrow:disabled, 
 QDateEdit::up-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 QDateEdit::down-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: bottom right; 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-top: 0px solid #aaaaaa;
@@ -1616,12 +1622,12 @@ QDateEdit::down-button
 
 QDateEdit::down-button:hover 
 {
-    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QTimeEdit::down-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateEdit::down-arrow 
@@ -1634,8 +1640,8 @@ QDateEdit::down-arrow
 QDateEdit::down-arrow:disabled,
 QDateEdit::down-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 /*/////////////////////////////////////////////////QDateTimeEdit///////////////////////////////////////////*/ 
@@ -1643,7 +1649,7 @@ QDateTimeEdit
 {
 	min-height:20px;
     padding-right: 15px; 
-    border: 1px solid #aaaaaa;/*±ß¿ò*/
+    border: 1px solid #aaaaaa;/*è¾¹æ¡†*/
     background:white;
 }
 
@@ -1651,7 +1657,7 @@ QDateTimeEdit::up-button
 {
     subcontrol-origin: padding;
     subcontrol-position: top right; /* position at the top right corner */
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-bottom: 0px solid #aaaaaa;
@@ -1659,12 +1665,12 @@ QDateTimeEdit::up-button
 
 QDateTimeEdit::up-button:hover 
 {
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateTimeEdit::up-button:pressed 
 {
-   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+   background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateTimeEdit::up-arrow 
@@ -1677,15 +1683,15 @@ QDateTimeEdit::up-arrow
 QDateTimeEdit::up-arrow:disabled, 
 QDateTimeEdit::up-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 QDateTimeEdit::down-button 
 {
     subcontrol-origin: padding;
     subcontrol-position: bottom right; 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
     width: 15px; 
     border-left: 1px solid #aaaaaa;
     border-top: 0px solid #aaaaaa;
@@ -1693,12 +1699,12 @@ QDateTimeEdit::down-button
 
 QDateTimeEdit::down-button:hover 
 {
-    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*½¥±ä±³¾°É«*/
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #eeeeee, stop:0.8 #ffffff);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateTimeEdit::down-button:pressed 
 {
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*½¥±ä±³¾°É«*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.8 #dddddd);/*æ¸å˜èƒŒæ™¯è‰²*/
 }
 
 QDateTimeEdit::down-arrow 
@@ -1711,8 +1717,8 @@ QDateTimeEdit::down-arrow
 QDateTimeEdit::down-arrow:disabled,
 QDateTimeEdit::down-arrow:off 
 { 
-	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*½¥±ä±³¾°É«*/
-	border: 1px solid #dddddd;/*±ß¿ò*/
+	background: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #ffffff, stop:0.6 #eeeeee);/*æ¸å˜èƒŒæ™¯è‰²*/
+	border: 1px solid #dddddd;/*è¾¹æ¡†*/
 }
 
 /*/////////////////////////////////////////////////QGraphicsView///////////////////////////////////////////*/ 
